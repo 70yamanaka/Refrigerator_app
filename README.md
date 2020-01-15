@@ -22,3 +22,20 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# refrigerator DB設計
+## usersテーブ
+|Column|Type|Options|
+|------|----|-------|
+|password|string|null: false|
+|username|string|null: false|
+### Association
+- has_many :puts
+
+## putsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|title|string|null: false|
+|image|string|null: false|
+### Association
+- belongs_to : user
