@@ -1,0 +1,56 @@
+.main {
+  width: 1000px;
+  height: 1700px;
+  background-color: gray;
+  font-size: 30px;
+  padding: 0px 100px 0px 100px;
+  padding-top: 50px;
+  &__header {
+  }
+  &__user {
+    text-align: center;
+    padding: 50px 0;
+    background-color: yellow;
+  }
+  &__center {
+    display: flex;
+    &__refrigerator {
+      width: calc(100%/2);
+      height: 74px;
+      background-color: #FFFFCC;
+      line-height: 72px;
+      text-align: center;
+    }
+    &__freezer {
+      width: calc(100%/2);
+      height: 74px;
+      background-color: #eee;
+      line-height: 72px;
+      text-align: center;
+    }
+  }
+  &__contents {
+    background-color: red;
+    padding: 16px;
+    display: flex;
+    &__images {
+      margin-right: 30px;
+    }
+    &__right {
+      &__name {
+        font-size: 30px;
+        font-weight: 400;
+        color: black;
+        font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
+        margin-bottom: 8px;
+      }
+      &__date {
+        font-size: 30px;
+        font-weight: 400;
+        color: black;
+        font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
