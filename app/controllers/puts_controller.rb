@@ -1,0 +1,2 @@
+class PutsController < ApplicationController
+end
