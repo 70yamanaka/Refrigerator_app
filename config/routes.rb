@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: "puts#index"
   devise_for :users
+  root to: "puts#index"
 end

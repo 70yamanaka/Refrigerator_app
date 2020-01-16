@@ -1,0 +1,23 @@
+.main
+  .main_header
+    - if user_signed_in?
+      = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "main__header__logout"
+    - else 
+      = link_to "ログイン", new_user_session_path, class: "main__header__login"
+      = link_to "新規登録", new_user_registration_path, class: "main__header__new"
+  .main__user
+    人間さん家
+  .main__center
+    .main__center__refrigerator
+      冷蔵庫
+    .main__center__freezer
+      冷凍庫
+  .main__contents
+    .main__contents__images
+      -# 借り入れ写真
+      = image_tag "image.jpg", size: "100x100"
+    .main__contents__right
+      .main__contents__right__name
+        トマト
+      .main__contents__right__date
+        2020/2/10 ~ 2020/2/11
