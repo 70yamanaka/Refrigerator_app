@@ -6,69 +6,102 @@
       = link_to "ログイン", new_user_session_path, class: "main__header__login"
       = link_to "新規登録", new_user_registration_path, class: "main__header__new"
   .main__user
-    人間さん家
+    人間さん家の冷蔵庫
+    .main__user__add
+      追加する
+      = link_to ""
   .main__center
-    .main__center__refrigerator
+    %input#refrigerator{checked: "checked", name: "tab_item", type: "radio"}
+    %label.main__center__tab_item{for: "refrigerator"}
       冷蔵庫
-    .main__center__freezer
+    %input#freezer{name: "tab_item", type: "radio"}
+    %label.main__center__tab_item{for: "freezer"}
       冷凍庫
-  .main__contents
-    .main__contents__categories
-      野菜類
-      .main__contents__categories__images
-        .main__contents__categories__images__image
-          -# 借り入れ写真
-          = image_tag "image.jpg", size: "100x100"
-        .main__contents__categories__images_image
-          -# 借り入れ写真
-          = image_tag "image.jpg", size: "100x100"
+    #refrigerator_main.main__center__tab_mains
+      .main__center__tab_mains__main
+        肉類
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "meat.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "meat.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "meat.jpg", size: "100x100"
+      .main__center__tab_mains__main
+        野菜類
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "image.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "image.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "image.jpg", size: "100x100"
+      .main__center__tab_mains__main
+        海鮮類
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "fish.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "fish.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "fish.jpg", size: "100x100"
+      .main__center__tab_mains__main
+        飲料水類
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+      .main__center__tab_mains__main
+        調味料類
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+      .main__center__tab_mains__main
+        惣菜類
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+      .main__center__tab_mains__main
+        その他
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+          .cmain__center__tab_mains__main__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+    #freezer_box.main__center__tab_mains
+      .main__center__tab_mains__box
+        冷凍食品類
+        .main__center__tab_mains__box__bottom
+          .main__center__tab_mains__box__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+      .main__center__tab_mains__box
+        アイス類
+        .main__center__tab_mains__box__bottom
+          .main__center__tab_mains__box__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+      .main__center__tab_mains__box
+        氷類
+        .main__center__tab_mains__box__bottom
+          .main__center__tab_mains__box__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
+      .main__center__tab_mains__box
+        その他
+        .main__center__tab_mains__box__bottom
+          .main__center__tab_mains__box__bottom--img
+            = image_tag "coke.jpg", size: "100x100"
 
-    .main__contents__categories
-      肉類
-      .main__contents__categories__images
-        .main__contents__categories__images__image
-          -# 借り入れ写真
-          = image_tag "meat.jpg", size: "100x100"
-        .main__contents__categories__images_image
-          -# 借り入れ写真
-          = image_tag "meat.jpg", size: "100x100"
 
-    .main__contents__categories
-      魚類
-      .main__contents__categories__images
-        .main__contents__categories__images__image
-          -# 借り入れ写真
-          = image_tag "fish.jpg", size: "100x100"
-        .main__contents__categories__images_image
-          -# 借り入れ写真
-          = image_tag "fish.jpg", size: "100x100"
 
-    .main__contents__categories
-      飲料類
-      .main__contents__categories__images
-        .main__contents__categories__images__image
-          -# 借り入れ写真
-          = image_tag "coke.jpg", size: "100x100"
-        .main__contents__categories__images_image
-          -# 借り入れ写真
-          = image_tag "coke.jpg", size: "100x100"
-
-    .main__contents__categories
-      惣菜類
-      .main__contents__categories__images
-        .main__contents__categories__images__image
-          -# 借り入れ写真
-          = image_tag "coke.jpg", size: "100x100"
-        .main__contents__categories__images_image
-          -# 借り入れ写真
-          = image_tag "coke.jpg", size: "100x100"
-        
-    .main__contents__categories
-      調味料
-      .main__contents__categories__images
-        .main__contents__categories__images__image
-          -# 借り入れ写真
-          = image_tag "coke.jpg", size: "100x100"
-        .main__contents__categories__images_image
-          -# 借り入れ写真
-          = image_tag "coke.jpg", size: "100x100"
