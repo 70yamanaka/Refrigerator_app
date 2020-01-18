@@ -6,7 +6,10 @@
       = link_to "ログイン", new_user_session_path, class: "main__header__login"
       = link_to "新規登録", new_user_registration_path, class: "main__header__new"
   .main__user
-    人間さん家
+    人間さん家の冷蔵庫
+    .main__user__add
+      追加する
+      = link_to ""
   .main__center
     %input#refrigerator{checked: "checked", name: "tab_item", type: "radio"}
     %label.main__center__tab_item{for: "refrigerator"}
