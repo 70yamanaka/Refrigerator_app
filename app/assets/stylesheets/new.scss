@@ -2,6 +2,74 @@
   box-sizing: border-box;
 }
 
-.exhibitcontent　{
-  background-color: red;
+.exhibitcontent {
+  background-color: gray;
+  &__main {
+    text-align: center;
+    &__title {
+      font-size: 22px;
+      border-bottom:solid 1px #EEEEEE;
+      padding:32px 16px;
+      background-color: red;
+    }
+    &__first {
+      padding: 40px;
+      &__question {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        display:inline-block;
+        vertical-align: middle;
+        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
+      }
+      &__required {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        display:inline-block;
+        vertical-align: middle;
+        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
+      }
+    }
+    &__second {
+      padding: 40px;
+      &__question {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        display:inline-block;
+        vertical-align: middle;
+        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
+      }
+      &__required {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        display:inline-block;
+        vertical-align: middle;
+        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
+      }
+    }
+    &__third {
+      padding: 40px;
+      &__question {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        display:inline-block;
+        vertical-align: middle;
+        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
+      }
+      &__required {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        display:inline-block;
+        vertical-align: middle;
+        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
+      }
+      &__answer {
+      }
+    }
+  }
 }
