@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2020_01_16_033056) do
     t.integer "expiration_date_m", null: false
     t.integer "expiration_date_d", null: false
     t.integer "category", default: 0, null: false
+    t.integer "type", null: false
     t.string "memo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
