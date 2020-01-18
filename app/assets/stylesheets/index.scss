@@ -1,5 +1,9 @@
+*{
+  box-sizing: border-box;
+}
+
 .main {
-  width: 1000px;
+  width: 100%;
   height: 1700px;
   background-color: gray;
   font-size: 30px;
@@ -32,24 +36,12 @@
   &__contents {
     background-color: red;
     padding: 16px;
-    display: flex;
-    &__images {
-      margin-right: 30px;
-    }
-    &__right {
-      &__name {
-        font-size: 30px;
-        font-weight: 400;
-        color: black;
-        font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
-        margin-bottom: 8px;
-      }
-      &__date {
-        font-size: 30px;
-        font-weight: 400;
-        color: black;
-        font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
-        margin-bottom: 8px;
+    &__categories {
+      &__images {
+        display: flex;
+        &__image {
+          margin-right: 20px;
+        }
       }
     }
   }
