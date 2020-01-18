@@ -17,32 +17,71 @@
     background-color: yellow;
   }
   &__center {
-    display: flex;
-    &__refrigerator {
-      width: calc(100%/2);
-      height: 74px;
-      background-color: #FFFFCC;
-      line-height: 72px;
-      text-align: center;
-    }
-    &__freezer {
+    margin-top: 50px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    &__tab_item {
       width: calc(100%/2);
       height: 74px;
       background-color: #eee;
       line-height: 72px;
+      font-size: 16px;
       text-align: center;
+      color: #565656;
+      display: block;
+      float: left;
+      text-align: center;
+      font-weight: 700;
+      transition: all 0.2s ease;
+      cursor: pointer;
     }
-  }
-  &__contents {
-    background-color: red;
-    padding: 16px;
-    &__categories {
-      &__images {
-        display: flex;
-        &__image {
-          margin-right: 20px;
+    &__tab_mains {
+      display: none;
+      clear: both;
+      overflow: hidden;
+      cursor: pointer;
+      &__main {
+        border-bottom: 1px solid #eee;
+        position: relative;
+        &__bottom{
+          background-color: #ffffff;
+          color: #cccccc;
+          display: flex;
+          &--img{
+            margin-right: 20px;
+            &:hover {
+              background-color: #F5F5F5 ;
+            }
+          }
+        }
+      }
+      &__box {
+        &__categories{
+          background-color: #ffffff;
+          color: #cccccc;
+          display: flex;
+          &--img{
+            margin-right: 20px;
+            &:hover {
+              background-color: #F5F5F5 ;
+            }
+          }
         }
       }
     }
+    input[name="tab_item"] {
+      display: none;
+    }
+  }
+  #refrigerator:checked ~ #refrigerator_main,
+  #freezer:checked ~ #freezer_box{
+    display: block;
+  }
+  .main__center input:checked + .main__center__tab_item {
+    background-color: #fff;
+    border-top: 2px solid #ea352d;
+    height: 72px;
+    line-height: 72px;
   }
 }
