@@ -11,6 +11,7 @@ class CreatePuts < ActiveRecord::Migration[5.2]
       t.integer :expiration_date_d, null: false
       t.integer :category, null: false, default: 0
       t.integer :type, null: false
+      t.integer :count, null: false
       t.string :memo
       t.timestamps
     end
