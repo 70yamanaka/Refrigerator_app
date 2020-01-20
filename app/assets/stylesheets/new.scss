@@ -120,43 +120,81 @@
       }
     }
     &__sixth {
-      
+      padding: 40px;
+      &__question {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        display:inline-block;
+        vertical-align: middle;
+        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
+      }
+      &__required {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        display:inline-block;
+        vertical-align: middle;
+        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
+      }
+      &__answer {
+        padding-top: 20px;
+        
+      }
     }
     &__seventh {
-
+      padding: 40px;
+      &__question {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        display:inline-block;
+        vertical-align: middle;
+        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
+      }
+      &__required {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        display:inline-block;
+        vertical-align: middle;
+        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
+      }
+      &__answer {
+        padding-top: 20px;
+        
+      }
     }
     &__eightth {
+      padding: 40px;
+      &__question {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        display:inline-block;
+        vertical-align: middle;
+        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
+      }
+      &__required {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        display:inline-block;
+        vertical-align: middle;
+        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
+      }
+      &__answer {
+        padding-top: 20px;
+        
+      }
+    }
+    &__ninth {
+      padding: 40px;
       &--submit{
-        height: 48px;
-        width: 100%;
-        line-height: 48px;
-        font-size: 14px;
-        font-weight: 400;
-        font-family:"Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
-        color: #fff;
-        background: #ea352d;
-        border: 1px solid #ea352d;
-        text-align: center;
-        margin-top: 40px;
-        cursor: pointer;
+        
       }
       &--back{
-        display: block;
-        width: 45%;
-        height: 50px;
-        line-height: 50px;
-        font-size: 14px;
-        font-weight: 400;
-        font-family:"Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
-        text-align: center;
-        text-decoration: none;
-        color: #FFFFFF;
-        background-color: #aaa;
-        border: 1px solid #aaa;
-        margin: 24px auto 0;
-        &:hover{
-          opacity: 70%;
-        }
+        
       }
     }
   }
