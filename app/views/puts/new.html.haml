@@ -9,7 +9,8 @@
       .exhibitcontent__main__first__required
         必須
       .exhibitcontent__main__first__answer
-        = image_tag "image.jpg", size: "100x100"
+        %input#myImage{:accept => "image/*", :type => "file"}/
+        %img#preview/
 
     .exhibitcontent__main__second
       .exhibitcontent__main__second__question
@@ -60,4 +61,7 @@
         任意
       .exhibitcontent__main__seventh__answer
         = text_field :name, placeholder:"名前"
+    .exhibitcontent__main__eightth
+      -# = submit '保存する', class: 'exhibitcontent_main__eightth--submit'
+      = link_to "もどる","#",class: 'exhibitcontent_main__eightth--back'
     
