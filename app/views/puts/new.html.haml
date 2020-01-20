@@ -9,7 +9,8 @@
       .exhibitcontent__main__first__required
         必須
       .exhibitcontent__main__first__answer
-        = image_tag "image.jpg", size: "100x100"
+        %input#myImage{:accept => "image/*", :type => "file"}/
+        %img#preview/
 
     .exhibitcontent__main__second
       .exhibitcontent__main__second__question
@@ -45,19 +46,29 @@
       .exhibitcontent__main__fifth__required
         必須
       .exhibitcontent__main__fifth__answer
-        -# = select :category, [["--": "0"],["肉類": "1"],["野菜類": "2"],["海鮮類": "3"],["飲料水類": "4"],["調味料類": "5"],["惣菜類": "6"],["その他": "7"]},{}, {class: 'exhibitcontent__main__fifth__answer--1'}
+        = select :category, [["--": "0"],["肉類": "1"],["野菜類": "2"],["海鮮類": "3"],["飲料水類": "4"],["調味料類": "5"],["惣菜類": "6"],["その他": "7"]],{}, {class: 'exhibitcontent__main__fifth__answer--1'}
     .exhibitcontent__main__sixth
       .exhibitcontent__main__sixth__question
-        タイプ
+        種類
       .exhibitcontent__main__sixth__required
-        必須
+        任意
       .exhibitcontent__main__sixth__answer
         = text_field :name, placeholder:"名前"
     .exhibitcontent__main__seventh
       .exhibitcontent__main__seventh__question
-        メモ
+        個数
       .exhibitcontent__main__seventh__required
-        任意
+        必須
       .exhibitcontent__main__seventh__answer
         = text_field :name, placeholder:"名前"
+    .exhibitcontent__main__eightth
+      .exhibitcontent__main__eightth__question
+        個数
+      .exhibitcontent__main__eightth__required
+        必須
+      .exhibitcontent__main__eightth__answer
+        = text_field :name, placeholder:"名前"
+    .exhibitcontent__main__ninth
+      = submit_tag '保存する', class: 'exhibitcontent_main__ninth--submit'
+      = link_to "もどる","#",class: 'exhibitcontent_main__ninth--back'
     
