@@ -1,7 +1,7 @@
 class CreatePuts < ActiveRecord::Migration[5.2]
   def change
     create_table :puts do |t|
-      t.text :image
+      t.text :image, null: false
       t.integer :bestby_date_y
       t.integer :bestby_date_m
       t.integer :bestby_date_d

@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_01_16_033056) do
 
   create_table "puts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.text "image"
+    t.text "image", null: false
     t.integer "bestby_date_y"
     t.integer "bestby_date_m"
     t.integer "bestby_date_d"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_01_16_033056) do
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "nickname", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
