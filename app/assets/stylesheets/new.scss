@@ -4,8 +4,8 @@
 
 .exhibitcontent {
   background-color: gray;
+  text-align: center;
   &__main {
-    text-align: center;
     &__title {
       font-size: 22px;
       border-bottom:solid 1px #EEEEEE;
@@ -30,6 +30,10 @@
         vertical-align: middle;
         font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
       }
+      &__answer {
+        padding-top: 20px;
+        
+      }
     }
     &__second {
       padding: 40px;
@@ -48,6 +52,10 @@
         display:inline-block;
         vertical-align: middle;
         font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
+      }
+      &__answer {
+        padding-top: 20px;
+        
       }
     }
     &__third {
@@ -97,75 +105,6 @@
       }
     }
     &__fifth {
-      padding: 40px;
-      &__question {
-        font-size: 20px;
-        font-weight: 600;
-        color: #333333;
-        display:inline-block;
-        vertical-align: middle;
-        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
-      }
-      &__required {
-        font-size: 20px;
-        font-weight: 600;
-        color: #333333;
-        display:inline-block;
-        vertical-align: middle;
-        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
-      }
-      &__answer {
-        padding-top: 20px;
-        
-      }
-    }
-    &__sixth {
-      padding: 40px;
-      &__question {
-        font-size: 20px;
-        font-weight: 600;
-        color: #333333;
-        display:inline-block;
-        vertical-align: middle;
-        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
-      }
-      &__required {
-        font-size: 20px;
-        font-weight: 600;
-        color: #333333;
-        display:inline-block;
-        vertical-align: middle;
-        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
-      }
-      &__answer {
-        padding-top: 20px;
-        
-      }
-    }
-    &__seventh {
-      padding: 40px;
-      &__question {
-        font-size: 20px;
-        font-weight: 600;
-        color: #333333;
-        display:inline-block;
-        vertical-align: middle;
-        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
-      }
-      &__required {
-        font-size: 20px;
-        font-weight: 600;
-        color: #333333;
-        display:inline-block;
-        vertical-align: middle;
-        font-family: "Source Sans Pro", Helvetica, Arial, æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“, YuGothic, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, sans-serif;
-      }
-      &__answer {
-        padding-top: 20px;
-        
-      }
-    }
-    &__eightth {
       padding: 40px;
       &__question {
         font-size: 20px;

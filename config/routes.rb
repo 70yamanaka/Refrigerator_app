@@ -3,9 +3,5 @@ Rails.application.routes.draw do
 
   root to: "puts#index"
 
-  resources :puts do
-    collection do
-      get 'new'
-    end
-  end
+  resources :puts 
 end
