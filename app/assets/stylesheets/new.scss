@@ -4,7 +4,7 @@
 
 .exhibitcontent {
   background-color: gray;
-  text-align: center;
+  margin: 0px 24%;
   &__main {
     &__title {
       font-size: 22px;
@@ -57,6 +57,16 @@
         padding-top: 20px;
         
       }
+    }
+    #put_bestby_date_y{
+      width: 345px;
+      height: 40px;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-top: 8px;
+      margin-bottom:35px;
+      cursor: pointer;
     }
     &__third {
       padding: 40px;
