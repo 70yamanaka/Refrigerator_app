@@ -4,7 +4,7 @@
 
 .exhibitcontent {
   background-color: gray;
-  text-align: center;
+  margin: 0px 24%;
   &__main {
     &__title {
       font-size: 22px;
@@ -55,7 +55,36 @@
       }
       &__answer {
         padding-top: 20px;
-        
+        &--1 {
+          width: 150px;
+          height: 40px;
+          background-color: #FFFFFF;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+          margin-top: 8px;
+          margin-bottom:35px;
+          cursor: pointer;
+        }
+        &--2 {
+          width: 150px;
+          height: 40px;
+          background-color: #FFFFFF;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+          margin-top: 8px;
+          margin-bottom:35px;
+          cursor: pointer;
+        }
+        &--3 {
+          width: 150px;
+          height: 40px;
+          background-color: #FFFFFF;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+          margin-top: 8px;
+          margin-bottom:35px;
+          cursor: pointer;
+        }
       }
     }
     &__third {
@@ -78,7 +107,16 @@
       }
       &__answer {
         padding-top: 20px;
-        
+        &--1 {
+          width: 150px;
+          height: 40px;
+          background-color: #FFFFFF;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+          margin-top: 8px;
+          margin-bottom:35px;
+          cursor: pointer;
+        }
       }
     }
     &__forth {
@@ -101,7 +139,16 @@
       }
       &__answer {
         padding-top: 20px;
-        
+        &--1 {
+          width: 150px;
+          height: 40px;
+          background-color: #FFFFFF;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+          margin-top: 8px;
+          margin-bottom:35px;
+          cursor: pointer;
+        }
       }
     }
     &__fifth {
@@ -124,17 +171,10 @@
       }
       &__answer {
         padding-top: 20px;
-        
       }
     }
-    &__ninth {
+    &__sixth {
       padding: 40px;
-      &--submit{
-        
-      }
-      &--back{
-        
-      }
     }
   }
 }
