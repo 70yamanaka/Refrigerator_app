@@ -22,8 +22,8 @@
         肉類
         .main__center__tab_mains__main__bottom
           .cmain__center__tab_mains__main__bottom--img
-            - @puts.each do |p|
-              = p.image
+            - @puts.each do |put|
+            = image_tag put.image
           .cmain__center__tab_mains__main__bottom--img
             = image_tag "meat.jpg", size: "100x100"
           .cmain__center__tab_mains__main__bottom--img
