@@ -8,6 +8,7 @@ class CreatePuts < ActiveRecord::Migration[5.2]
       t.integer :category, null: false, default: 0
       t.integer :count, null: false
       t.string :memo
+      t.references :user, foreign_key: true
       t.timestamps
     end
   end

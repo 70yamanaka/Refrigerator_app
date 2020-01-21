@@ -1,5 +1,6 @@
 class PutsController < ApplicationController
   def index
+    @puts = Put.all
   end
 
   def new
@@ -8,6 +9,7 @@ class PutsController < ApplicationController
 
   def create
     @put = Put.new(put_params)
+    @put.user_id = current_user.id
     if @put.save
       redirect_to root_path
     else

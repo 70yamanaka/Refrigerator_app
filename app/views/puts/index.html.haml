@@ -8,8 +8,8 @@
   .main__user
     /= current_user.nickname
     .main__user__add
-      追加する
-    = link_to ""
+      = link_to new_put_path do
+        追加する
   .main__center
     %input#refrigerator{checked: "checked", name: "tab_item", type: "radio"}
     %label.main__center__tab_item{for: "refrigerator"}
@@ -22,7 +22,8 @@
         肉類
         .main__center__tab_mains__main__bottom
           .cmain__center__tab_mains__main__bottom--img
-            = image_tag "meat.jpg", size: "100x100"
+            - @puts.each do |p|
+              = p.image
           .cmain__center__tab_mains__main__bottom--img
             = image_tag "meat.jpg", size: "100x100"
           .cmain__center__tab_mains__main__bottom--img
