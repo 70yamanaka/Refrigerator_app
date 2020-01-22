@@ -1,6 +1,16 @@
 class PutsController < ApplicationController
   def index
-    @puts = Put.all
+    @puts_1 = Put.where(category: "1").order('created_at DESC')
+    @puts_2 = Put.where(category: "2").order('created_at DESC')
+    @puts_3 = Put.where(category: "3").order('created_at DESC')
+    @puts_4 = Put.where(category: "4").order('created_at DESC')
+    @puts_5 = Put.where(category: "5").order('created_at DESC')
+    @puts_6 = Put.where(category: "6").order('created_at DESC')
+    @puts_7 = Put.where(category: "7").order('created_at DESC')
+    @puts_8 = Put.where(category: "8").order('created_at DESC')
+    @puts_9 = Put.where(category: "9").order('created_at DESC')
+    @puts_10 = Put.where(category: "10").order('created_at DESC')
+    @puts_11 = Put.where(category: "11").order('created_at DESC')
   end
 
   def new

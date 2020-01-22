@@ -8,6 +8,9 @@
   .main__user
     /= current_user.nickname
     .main__user__add
+      = current_user.nickname 
+      %span.txtred<>
+        さん家の冷蔵庫
       = link_to new_put_path do
         追加する
   .main__center
@@ -22,12 +25,8 @@
         肉類
         .main__center__tab_mains__main__bottom
           .cmain__center__tab_mains__main__bottom--img
-            - @puts.each do |put|
-              = image_tag put.image.url, size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "meat.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "meat.jpg", size: "100x100"
+            - @puts_1.each do |put|
+              = image_tag put.image.url
       .main__center__tab_mains__main
         野菜類
         .main__center__tab_mains__main__bottom
