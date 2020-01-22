@@ -1,10 +1,10 @@
 .main
+  = render 'refrigerator'
   .main__header
-    = render 'refrigerator'
     - if user_signed_in?
       = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "main__header__logout"
     - else 
-      = link_to "ログイン", new_user_session_path, class: "main__header__login"
+      = link_to "ログイン", new_user_session_path, class: "main__header__login" 
       = link_to "新規登録", new_user_registration_path, class: "main__header__new"
   .main__user
     .main__user__add
