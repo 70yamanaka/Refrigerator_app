@@ -1,0 +1,124 @@
+*{
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 1700px;
+  background-color: gray;
+  font-size: 30px;
+  padding: 0px 100px 0px 100px;
+  padding-top: 50px;
+  &__header {
+    display: flex;
+    margin-bottom: 10px;
+    &__login {
+      text-decoration: none;
+      margin-right: 10px;
+      display: block;
+      width: 160px;
+      padding: 0.8em;
+      text-align: center;
+      text-decoration: none;
+      color: #EC407A;
+      border: 2px solid #EC407A;
+      border-radius: 3px;
+      transition: .4s;
+      &:hover {
+        background: #EC407A;
+	      color: #fff;
+      }
+    }
+    &__new {
+      text-decoration: none;
+      text-decoration: none;
+      margin-right: 10px;
+      display: block;
+      width: 160px;
+      padding: 0.8em;
+      text-align: center;
+      color: #EC407A;
+      border: 2px solid #EC407A;
+      border-radius: 3px;
+      transition: .4s;
+      &:hover {
+        background: #EC407A;
+	      color: #fff;
+      }
+    }
+  }
+  &__user {
+    padding: 50px 0;
+    background-color: yellow;
+  }
+  &__center {
+    margin-top: 50px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    &__tab_item {
+      width: calc(100%/2);
+      height: 74px;
+      background-color: #eee;
+      line-height: 72px;
+      font-size: 30px;
+      text-align: center;
+      color: #565656;
+      display: block;
+      float: left;
+      text-align: center;
+      font-weight: 700;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    &__tab_mains {
+      display: none;
+      clear: both;
+      overflow: hidden;
+      cursor: pointer;
+      &__main {
+        border-bottom: 1px solid #eee;
+        position: relative;
+        &__bottom{
+          background-color: #ffffff;
+          font-size: 20px;
+          color: red;
+          display: flex;
+          &--img{
+            margin-right: 20px;
+            &:hover {
+              background-color: #F5F5F5 ;
+            }
+          }
+        }
+      }
+      &__box {
+        border-bottom:solid 1px #EEEEEE;
+        &__bottom{
+          background-color: #ffffff;
+          color: #cccccc;
+          display: flex;
+          &--img{
+            margin-right: 20px;
+            &:hover {
+              background-color: #F5F5F5 ;
+            }
+          }
+        }
+      }
+    }
+    input[name="tab_item"] {
+      display: none;
+    }
+  }
+  #refrigerator:checked ~ #refrigerator_main,
+  #freezer:checked ~ #freezer_box{
+    display: block;
+  }
+  .main__center input:checked + .main__center__tab_item {
+    background-color: #fff;
+    border-top: 2px solid #ea352d;
+    height: 72px;
+    line-height: 72px;
+  }
+}

@@ -1,5 +1,5 @@
 class PutsController < ApplicationController
-  before_action :move_to_sign_up
+  before_action :move_to_top
 
   def index
     @puts_1 = Put.where(category: "1").order('created_at DESC')
@@ -35,13 +35,13 @@ class PutsController < ApplicationController
 
   def top
   end
-  
+
   private
   def put_params
     params.require(:put).permit(:image,:name,:bestby_date_y,:bestby_date_m,:bestby_date_d,:expiration_date_y,:expiration_date_m,:expiration_date_d,:category,:type, :count, :memo)
   end
 
-  def move_to_sign_up
-    redirect_to new_user_registration_path unless user_signed_in?
+  def move_to_top
+    render top_puts_path unless user_signed_in?
   end
 end

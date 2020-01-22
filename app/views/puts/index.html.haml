@@ -9,7 +9,7 @@
       = link_to "新規登録", new_user_registration_path, class: "main__header__new"
   .main__user
     .main__user__add
-      -# = current_user.nickname 
+      = current_user.nickname 
       %span.txtred<>
         さん家の冷蔵庫
   .main__center
@@ -24,17 +24,15 @@
         肉類
         .main__center__tab_mains__main__bottom
           .cmain__center__tab_mains__main__bottom--img
-            -# - @puts_1.each do |put|
-            -#   - if put.user_id == current_user.id && user_signed_in?
-            -#     = image_tag put.image.url
-            -#     = put.name
-            -#     = put.bestby_date_y
-            -#     %span /
-            -#     = put.bestby_date_m
-            -#     %span /
-            -#     = put.bestby_date_d
-            -#     -#   = link_to put_path(put.id) do
-            -#     -# - else 
+            - @puts_1.each do |put|
+              - if put.user_id == current_user.id
+                = image_tag put.image.url
+                = put.name
+                = put.bestby_date_y
+                %span /
+                = put.bestby_date_m
+                %span /
+                = put.bestby_date_d
       .main__center__tab_mains__main
         野菜類
         .main__center__tab_mains__main__bottom
