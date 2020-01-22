@@ -3,5 +3,8 @@ Rails.application.routes.draw do
 
   root to: "puts#index"
 
-  resources :puts
+  resources :puts do
+    collection do
+      get 'top'
+    end
 end
