@@ -1,15 +1,17 @@
 .main
-  .main_header
+  = render 'refrigerator'
+  .main__header
     - if user_signed_in?
       = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "main__header__logout"
     - else 
-      = link_to "ログイン", new_user_session_path, class: "main__header__login"
+      = link_to "ログイン", new_user_session_path, class: "main__header__login" 
       = link_to "新規登録", new_user_registration_path, class: "main__header__new"
   .main__user
-    /= current_user.nickname
     .main__user__add
-      追加する
-    = link_to ""
+      = current_user.nickname 
+      %span.txtred<>
+        さん家の冷蔵庫
+    = link_to "冷蔵庫/冷凍庫に追加する", new_put_path , class: "main__user__others"
   .main__center
     %input#refrigerator{checked: "checked", name: "tab_item", type: "radio"}
     %label.main__center__tab_item{for: "refrigerator"}
@@ -22,86 +24,69 @@
         肉類
         .main__center__tab_mains__main__bottom
           .cmain__center__tab_mains__main__bottom--img
-            = image_tag "meat.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "meat.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "meat.jpg", size: "100x100"
+            - @puts_1.each do |put|
+              = image_tag put.image.url
       .main__center__tab_mains__main
         野菜類
         .main__center__tab_mains__main__bottom
           .cmain__center__tab_mains__main__bottom--img
-            = image_tag "image.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "image.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "image.jpg", size: "100x100"
+            - @puts_2.each do |put|
+              = image_tag put.image.url
       .main__center__tab_mains__main
         海鮮類
         .main__center__tab_mains__main__bottom
           .cmain__center__tab_mains__main__bottom--img
-            = image_tag "fish.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "fish.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "fish.jpg", size: "100x100"
+            - @puts_3.each do |put|
+              = image_tag put.image.url
       .main__center__tab_mains__main
         飲料水類
         .main__center__tab_mains__main__bottom
           .cmain__center__tab_mains__main__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
+            - @puts_4.each do |put|
+              = image_tag put.image.url
       .main__center__tab_mains__main
         調味料類
         .main__center__tab_mains__main__bottom
           .cmain__center__tab_mains__main__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
+            - @puts_5.each do |put|
+              = image_tag put.image.url
       .main__center__tab_mains__main
         惣菜類
         .main__center__tab_mains__main__bottom
           .cmain__center__tab_mains__main__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
+            - @puts_6.each do |put|
+              = image_tag put.image.url
       .main__center__tab_mains__main
         その他
         .main__center__tab_mains__main__bottom
           .cmain__center__tab_mains__main__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
-          .cmain__center__tab_mains__main__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
+            - @puts_7.each do |put|
+              = image_tag put.image.url
     #freezer_box.main__center__tab_mains
       .main__center__tab_mains__box
         冷凍食品類
         .main__center__tab_mains__box__bottom
           .main__center__tab_mains__box__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
+            - @puts_8.each do |put|
+              = image_tag put.image.url
       .main__center__tab_mains__box
         アイス類
         .main__center__tab_mains__box__bottom
           .main__center__tab_mains__box__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
+            - @puts_9.each do |put|
+              = image_tag put.image.url
       .main__center__tab_mains__box
         氷類
         .main__center__tab_mains__box__bottom
           .main__center__tab_mains__box__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
+            - @puts_10.each do |put|
+              = image_tag put.image.url
       .main__center__tab_mains__box
         その他
         .main__center__tab_mains__box__bottom
           .main__center__tab_mains__box__bottom--img
-            = image_tag "coke.jpg", size: "100x100"
+            - @puts_11.each do |put|
+              = image_tag put.image.url
 
 
 

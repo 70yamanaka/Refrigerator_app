@@ -10,12 +10,68 @@
   padding: 0px 100px 0px 100px;
   padding-top: 50px;
   &__header {
+    display: flex;
+    margin-bottom: 10px;
+    &__logout {
+      text-decoration: none;
+      margin-right: 10px;
+      display: block;
+      width: 160px;
+      padding: 0.8em;
+      text-align: center;
+      text-decoration: none;
+      color: #EC407A;
+      border: 2px solid #EC407A;
+      border-radius: 3px;
+      transition: .4s;
+      &:hover {
+        background: #EC407A;
+	      color: #fff;
+      }
+    }
+    &__login {
+      text-decoration: none;
+      margin-right: 10px;
+      display: block;
+      width: 160px;
+      padding: 0.8em;
+      text-align: center;
+      text-decoration: none;
+      color: #EC407A;
+      border: 2px solid #EC407A;
+      border-radius: 3px;
+      transition: .4s;
+      &:hover {
+        background: #EC407A;
+	      color: #fff;
+      }
+    }
+    &__new {
+      text-decoration: none;
+      text-decoration: none;
+      margin-right: 10px;
+      display: block;
+      width: 160px;
+      padding: 0.8em;
+      text-align: center;
+      color: #EC407A;
+      border: 2px solid #EC407A;
+      border-radius: 3px;
+      transition: .4s;
+      &:hover {
+        background: #EC407A;
+	      color: #fff;
+      }
+    }
   }
   &__user {
-    text-align: center;
     padding: 50px 0;
     background-color: yellow;
     &__add {
+      text-align: center;
+    }
+    &__others {
+      text-align: right;
     }
   }
   &__center {

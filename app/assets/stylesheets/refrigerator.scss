@@ -1,0 +1,12 @@
+.app{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  z-index: 100;
+  text-decoration: none;
+  text-align: center;
+  &__title{
+    font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
+    color: black;
+  }
+}

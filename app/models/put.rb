@@ -1,3 +1,4 @@
 class Put < ApplicationRecord
-  belongs_to :user, optional: true
+  belongs_to :user
+  mount_uploader :image, ImageUploader
 end
