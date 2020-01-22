@@ -2,7 +2,7 @@
   = form_with model: @put,class:"exhibitcontent_main", local: true do |f|
     .exhibitcontent__main__title
       情報を入力してください
-
+    
     .exhibitcontent__main__first
       .exhibitcontent__main__first__question
         画像
@@ -16,8 +16,7 @@
               %label{for: "img-file"}
                 こちらをクリックしてください
 
-
-
+    
     .exhibitcontent__main__second
       .exhibitcontent__main__second__question
         賞味期限/消費期限
@@ -47,13 +46,21 @@
     
     .exhibitcontent__main__fifth
       .exhibitcontent__main__fifth__question
-        備考
+        名前
       .exhibitcontent__main__fifth__required
         任意
       .exhibitcontent__main__fifth__answer
-        = f.text_field :memo, placeholder:"メモを書いてください"
+        = f.text_field :name, placeholder:"名前を書いてください"
     
     .exhibitcontent__main__sixth
+      .exhibitcontent__main__sixth__question
+        備考
+      .exhibitcontent__main__sixth__required
+        任意
+      .exhibitcontent__main__sixth__answer
+        = f.text_field :memo, placeholder:"メモを書いてください"
+    
+    .exhibitcontent__main__seventh
       = f.submit '保存する', class: 'exhibitcontent_main__sixth--submit'
       = link_to "もどる","#",class: 'exhibitcontent_main__sixth--back'
     
