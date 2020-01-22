@@ -12,10 +12,13 @@
   &__header {
   }
   &__user {
-    text-align: center;
     padding: 50px 0;
     background-color: yellow;
     &__add {
+      text-align: center;
+    }
+    &__others {
+      text-align: right;
     }
   }
   &__center {
