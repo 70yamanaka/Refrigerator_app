@@ -3,15 +3,15 @@
   .main__header
     - if user_signed_in?
       = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "main__header__logout"
+      = link_to "冷蔵庫/冷凍庫に追加する", new_put_path , class: "main__header__others"
     - else 
       = link_to "ログイン", new_user_session_path, class: "main__header__login" 
       = link_to "新規登録", new_user_registration_path, class: "main__header__new"
   .main__user
     .main__user__add
-      = current_user.nickname 
+      -# = current_user.nickname 
       %span.txtred<>
         さん家の冷蔵庫
-    = link_to "冷蔵庫/冷凍庫に追加する", new_put_path , class: "main__user__others"
   .main__center
     %input#refrigerator{checked: "checked", name: "tab_item", type: "radio"}
     %label.main__center__tab_item{for: "refrigerator"}
@@ -25,6 +25,8 @@
         .main__center__tab_mains__main__bottom
           .cmain__center__tab_mains__main__bottom--img
             - @puts_1.each do |put|
+              -# - if put.user_id == current_user.id
+              -#   = link_to put_path(put.id) do
               = image_tag put.image.url
               = put.name
               = put.bestby_date_y
@@ -32,6 +34,7 @@
               = put.bestby_date_m
               %span /
               = put.bestby_date_d
+              -# - else 
       .main__center__tab_mains__main
         野菜類
         .main__center__tab_mains__main__bottom

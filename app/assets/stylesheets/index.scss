@@ -20,13 +20,30 @@
       padding: 0.8em;
       text-align: center;
       text-decoration: none;
-      color: #EC407A;
-      border: 2px solid #EC407A;
+      color: yellow;
+      border: 2px solid yellow;
       border-radius: 3px;
       transition: .4s;
       &:hover {
-        background: #EC407A;
-	      color: #fff;
+        background: yellow;
+	      color: black;
+      }
+    }
+    &__others {
+      text-decoration: none;
+      margin-right: 10px;
+      display: block;
+      width: 160px;
+      padding: 0.8em;
+      text-align: center;
+      text-decoration: none;
+      color: yellow;
+      border: 2px solid yellow;
+      border-radius: 3px;
+      transition: .4s;
+      &:hover {
+        background: yellow;
+	      color: black;
       }
     }
     &__login {
@@ -69,9 +86,6 @@
     background-color: yellow;
     &__add {
       text-align: center;
-    }
-    &__others {
-      text-align: right;
     }
   }
   &__center {

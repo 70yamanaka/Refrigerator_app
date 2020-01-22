@@ -28,6 +28,8 @@ class PutsController < ApplicationController
   end
 
   def show
+    @put = Put.find(params[:id])
+    
   end
 
   private
