@@ -1,0 +1,61 @@
+.main
+  = render 'refrigerator'
+  .main__header
+    = link_to "ログイン", new_user_session_path, class: "main__header__login" 
+    = link_to "新規登録", new_user_registration_path, class: "main__header__new"
+  .main__user
+  .main__center
+    %input#refrigerator{checked: "checked", name: "tab_item", type: "radio"}
+    %label.main__center__tab_item{for: "refrigerator"}
+      冷蔵庫
+    %input#freezer{name: "tab_item", type: "radio"}
+    %label.main__center__tab_item{for: "freezer"}
+      冷凍庫
+    #refrigerator_main.main__center__tab_mains
+      .main__center__tab_mains__main
+        肉類
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+      .main__center__tab_mains__main
+        野菜類
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+      .main__center__tab_mains__main
+        海鮮類
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+      .main__center__tab_mains__main
+        飲料水類
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+      .main__center__tab_mains__main
+        調味料類
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+      .main__center__tab_mains__main
+        惣菜類
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+      .main__center__tab_mains__main
+        その他
+        .main__center__tab_mains__main__bottom
+          .cmain__center__tab_mains__main__bottom--img
+    #freezer_box.main__center__tab_mains
+      .main__center__tab_mains__box
+        冷凍食品類
+        .main__center__tab_mains__box__bottom
+          .main__center__tab_mains__box__bottom--img
+      .main__center__tab_mains__box
+        アイス類
+        .main__center__tab_mains__box__bottom
+          .main__center__tab_mains__box__bottom--img
+      .main__center__tab_mains__box
+        氷類
+        .main__center__tab_mains__box__bottom
+          .main__center__tab_mains__box__bottom--img
+      .main__center__tab_mains__box
+        その他
+        .main__center__tab_mains__box__bottom
+          .main__center__tab_mains__box__bottom--img
+
+

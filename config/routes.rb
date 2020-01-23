@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  root to: "puts#index"
+  root "puts#index"
 
-  resources :puts 
+  resources :puts do
+    collection do
+      get 'top'
+    end
+  end
 end

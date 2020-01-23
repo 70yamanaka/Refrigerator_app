@@ -12,59 +12,23 @@
   &__header {
     display: flex;
     margin-bottom: 10px;
-    &__logout {
-      text-decoration: none;
-      margin-right: 10px;
-      display: block;
-      width: 80px;
-      padding: 0.8em;
-      text-align: center;
-      text-decoration: none;
-      color: yellow;
-      border: 2px solid yellow;
-      border-radius: 3px;
-      transition: .4s;
-      font-size: 12pt;
-      height: 80px;
-      &:hover {
-        background: yellow;
-	      color: black;
-      }
-    }
-    &__others {
-      text-decoration: none;
-      margin-right: 10px;
-      display: block;
-      width: 80px;
-      padding: 0.8em;
-      text-align: center;
-      text-decoration: none;
-      color: yellow;
-      border: 2px solid yellow;
-      border-radius: 3px;
-      transition: .4s;
-      height: 80px;
-      font-size: 12pt;
-      &:hover {
-        background: yellow;
-	      color: black;
-      }
-    }
     &__login {
       text-decoration: none;
       margin-right: 10px;
       display: block;
-      width: 160px;
+      width: 80px;
       padding: 0.8em;
       text-align: center;
       text-decoration: none;
-      color: #EC407A;
-      border: 2px solid #EC407A;
+      color: yellow;
+      border: 2px solid yellow;
       border-radius: 3px;
       transition: .4s;
+      height: 80px;
+      font-size: 12pt;
       &:hover {
-        background: #EC407A;
-	      color: #fff;
+        background: yellow;
+	      color: black;
       }
     }
     &__new {
@@ -72,25 +36,24 @@
       text-decoration: none;
       margin-right: 10px;
       display: block;
-      width: 160px;
+      width: 80px;
+      height: 80px;
+      font-size: 12pt;
       padding: 0.8em;
       text-align: center;
-      color: #EC407A;
-      border: 2px solid #EC407A;
+      color: yellow;
+      border: 2px solid yellow;
       border-radius: 3px;
       transition: .4s;
       &:hover {
-        background: #EC407A;
-	      color: #fff;
+        background: yellow;
+	      color: black;
       }
     }
   }
   &__user {
     padding: 50px 0;
     background-color: yellow;
-    &__add {
-      text-align: center;
-    }
   }
   &__center {
     margin-top: 50px;
@@ -120,26 +83,33 @@
       &__main {
         border-bottom: 1px solid #eee;
         position: relative;
-        &__list{
+        &__bottom{
+          background-color: #ffffff;
+          font-size: 20px;
+          color: red;
           display: flex;
-          flex-wrap: wrap;
-          &__data {
-            margin: 10px;
+          &--img{
+            margin-right: 20px;
             &:hover {
-              opacity: 0.5;
-            }
-            &__link {
-              text-decoration: none;
-              &__image {
-                color: black;
-              }
+              background-color: #F5F5F5 ;
             }
           }
         }
       }
-      
-
-
+      &__box {
+        border-bottom:solid 1px #EEEEEE;
+        &__bottom{
+          background-color: #ffffff;
+          color: #cccccc;
+          display: flex;
+          &--img{
+            margin-right: 20px;
+            &:hover {
+              background-color: #F5F5F5 ;
+            }
+          }
+        }
+      }
     }
     input[name="tab_item"] {
       display: none;
