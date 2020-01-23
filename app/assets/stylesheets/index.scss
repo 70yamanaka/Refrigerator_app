@@ -120,13 +120,6 @@
           background-color: #ffffff;
           font-size: 20px;
           color: red;
-          display: flex;
-          &--img{
-            margin-right: 20px;
-            &:hover {
-              background-color: #F5F5F5 ;
-            }
-          }
         }
       }
       &__box {

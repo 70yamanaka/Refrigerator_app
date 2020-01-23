@@ -67,3 +67,4 @@ gem 'haml-rails'
 gem 'active_hash'
 gem "carrierwave"
 gem "jquery-rails"
+gem "mini_magick"

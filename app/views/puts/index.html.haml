@@ -22,17 +22,10 @@
     #refrigerator_main.main__center__tab_mains
       .main__center__tab_mains__main
         肉類
-        .main__center__tab_mains__main__bottom
-          .cmain__center__tab_mains__main__bottom--img
-            - @puts_1.each do |put|
-              - if put.user_id == current_user.id
-                = image_tag put.image.url
-                = put.name
-                = put.bestby_date_y
-                %span /
-                = put.bestby_date_m
-                %span /
-                = put.bestby_date_d
+        %ul.main__center__tab_mains__main__list
+          - @puts_1.each do |put|
+            =render "index", put: put
+
       .main__center__tab_mains__main
         野菜類
         .main__center__tab_mains__main__bottom
