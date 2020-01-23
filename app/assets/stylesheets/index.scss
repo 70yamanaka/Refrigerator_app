@@ -128,11 +128,10 @@
             &:hover {
               opacity: 0.5;
             }
-            &__image {
-              &__name {
-                text-decoration: none;
-              }
-              &__date {
+            &__link {
+              text-decoration: none;
+              &__image {
+                color: black;
               }
             }
           }
