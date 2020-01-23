@@ -84,14 +84,18 @@
     margin: 0px 24%;
     background-color: gold;
     &__submit {
-      width: 150px;
-      height: 40px;
-      background-color: #FFFFFF;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      margin-top: 8px;
-      margin-bottom:35px;
-      cursor: pointer;
-      }
+      width: 100%;
+      display: block;
+      line-height: 48px;
+      background-color: #AAAAAA;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
+      color: #FFFFFF;
+      text-align: center;
+      border: 1px solid #AAAAAA;  
+      cursor: pointer;  
+      text-decoration: none;
+    }
   }
 }

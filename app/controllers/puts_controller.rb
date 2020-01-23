@@ -33,6 +33,15 @@ class PutsController < ApplicationController
     @put = Put.find(params[:id])
   end
 
+  def destroy
+    @put = Put.find(params[:id])
+    if @put.destroy
+      redirect_to(root_path)
+    else
+      redirect_to :show
+    end
+  end
+
   def top
   end
 
