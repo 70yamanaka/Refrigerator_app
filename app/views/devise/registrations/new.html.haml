@@ -5,23 +5,22 @@
   = render "devise/shared/error_messages", resource: resource
   .registrations__main
     .registrations__main__field
-      = f.label :nickname
+      = f.label :ニックネーム
       %br/
       = f.text_field :nickname, autofocus: true, autocomplete: "nickname"
     .registrations__main__field
-      = f.label :email
+      = f.label :メールアドレス
       %br/
       = f.email_field :email, autofocus: true, autocomplete: "email"
     .registrations__main__field
-      = f.label :password
+      = f.label :パスワード
       - if @minimum_password_length
         %em
-          (#{@minimum_password_length} characters minimum)
+          (#{@minimum_password_length} 文字)
       %br/
-      = f.password_field :password, autocomplete: "new-password"
-    .registrations__main__field
-      = f.label :password_confirmation
-      %br/
-      = f.password_field :password_confirmation, autocomplete: "new-password"
+      = f.password_field :password, id: "js-password", autocomplete: "new-password"
+    .registrations__main__password
+      %input#js-passcheck{type: "checkbox"}
+      %label{for: "js-passcheck"} パスワードを表示する
     .registrations__main__actions
       = f.submit "Sign up"
