@@ -3,10 +3,7 @@
   .main__header
     - if user_signed_in?
       = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "main__header__logout"
-      = link_to "冷蔵庫/冷凍庫に追加する", new_put_path , class: "main__header__others"
-    - else 
-      = link_to "ログイン", new_user_session_path, class: "main__header__login" 
-      = link_to "新規登録", new_user_registration_path, class: "main__header__new"
+      = link_to "追加する", new_put_path , class: "main__header__others"
   .main__user
     .main__user__add
       = current_user.nickname 
@@ -28,145 +25,63 @@
 
       .main__center__tab_mains__main
         野菜類
-        .main__center__tab_mains__main__bottom
-          .cmain__center__tab_mains__main__bottom--img
-            - @puts_2.each do |put|
-              = image_tag put.image.url
-              .cmain__center__tab_mains__main__bottom--img__name
-              = put.name
-              .cmain__center__tab_mains__main__bottom--img__date
-              = put.bestby_date_y
-              %span /
-              = put.bestby_date_m
-              %span /
-              = put.bestby_date_d
+        %ul.main__center__tab_mains__main__list
+          - @puts_2.each do |put|
+            =render "index", put: put
+          
       .main__center__tab_mains__main
         海鮮類
-        .main__center__tab_mains__main__bottom
-          .cmain__center__tab_mains__main__bottom--img
-            - @puts_3.each do |put|
-              = image_tag put.image.url
-              .cmain__center__tab_mains__main__bottom--img__name
-              = put.name
-              .cmain__center__tab_mains__main__bottom--img__date
-              = put.bestby_date_y
-              %span /
-              = put.bestby_date_m
-              %span /
-              = put.bestby_date_d
+        %ul.main__center__tab_mains__main__list
+          - @puts_3.each do |put|
+            =render "index", put: put
+
       .main__center__tab_mains__main
         飲料水類
-        .main__center__tab_mains__main__bottom
-          .cmain__center__tab_mains__main__bottom--img
-            - @puts_4.each do |put|
-              = image_tag put.image.url
-              .cmain__center__tab_mains__main__bottom--img__name
-              = put.name
-              .cmain__center__tab_mains__main__bottom--img__date
-              = put.bestby_date_y
-              %span /
-              = put.bestby_date_m
-              %span /
-              = put.bestby_date_d
+        %ul.main__center__tab_mains__main__list
+          - @puts_4.each do |put|
+            =render "index", put: put
+
       .main__center__tab_mains__main
         調味料類
-        .main__center__tab_mains__main__bottom
-          .cmain__center__tab_mains__main__bottom--img
-            - @puts_5.each do |put|
-              = image_tag put.image.url
-              .cmain__center__tab_mains__main__bottom--img__name
-              = put.name
-              .cmain__center__tab_mains__main__bottom--img__date
-              = put.bestby_date_y
-              %span /
-              = put.bestby_date_m
-              %span /
-              = put.bestby_date_d
+        %ul.main__center__tab_mains__main__list
+          - @puts_5.each do |put|
+            =render "index", put: put
+
       .main__center__tab_mains__main
         惣菜類
-        .main__center__tab_mains__main__bottom
-          .cmain__center__tab_mains__main__bottom--img
-            - @puts_6.each do |put|
-              = image_tag put.image.url
-              .cmain__center__tab_mains__main__bottom--img__name
-              = put.name
-              .cmain__center__tab_mains__main__bottom--img__date
-              = put.bestby_date_y
-              %span /
-              = put.bestby_date_m
-              %span /
-              = put.bestby_date_d
+        %ul.main__center__tab_mains__main__list
+          - @puts_6.each do |put|
+            =render "index", put: put
+
       .main__center__tab_mains__main
         その他
-        .main__center__tab_mains__main__bottom
-          .cmain__center__tab_mains__main__bottom--img
-            - @puts_7.each do |put|
-              = image_tag put.image.url
-              .cmain__center__tab_mains__main__bottom--img__name
-              = put.name
-              .cmain__center__tab_mains__main__bottom--img__date
-              = put.bestby_date_y
-              %span /
-              = put.bestby_date_m
-              %span /
-              = put.bestby_date_d
-    #freezer_box.main__center__tab_mains
-      .main__center__tab_mains__box
-        冷凍食品類
-        .main__center__tab_mains__box__bottom
-          .main__center__tab_mains__box__bottom--img
-            - @puts_8.each do |put|
-              = image_tag put.image.url
-              .cmain__center__tab_mains__main__bottom--img__name
-              = put.name
-              .cmain__center__tab_mains__main__bottom--img__date
-              = put.bestby_date_y
-              %span /
-              = put.bestby_date_m
-              %span /
-              = put.bestby_date_d
-      .main__center__tab_mains__box
-        アイス類
-        .main__center__tab_mains__box__bottom
-          .main__center__tab_mains__box__bottom--img
-            - @puts_9.each do |put|
-              = image_tag put.image.url
-              .cmain__center__tab_mains__main__bottom--img__name
-              = put.name
-              .cmain__center__tab_mains__main__bottom--img__date
-              = put.bestby_date_y
-              %span /
-              = put.bestby_date_m
-              %span /
-              = put.bestby_date_d
-      .main__center__tab_mains__box
-        氷類
-        .main__center__tab_mains__box__bottom
-          .main__center__tab_mains__box__bottom--img
-            - @puts_10.each do |put|
-              = image_tag put.image.url
-              .cmain__center__tab_mains__main__bottom--img__name
-              = put.name
-              .cmain__center__tab_mains__main__bottom--img__date
-              = put.bestby_date_y
-              %span /
-              = put.bestby_date_m
-              %span /
-              = put.bestby_date_d
-      .main__center__tab_mains__box
-        その他
-        .main__center__tab_mains__box__bottom
-          .main__center__tab_mains__box__bottom--img
-            - @puts_11.each do |put|
-              = image_tag put.image.url
-              .cmain__center__tab_mains__main__bottom--img__name
-              = put.name
-              .cmain__center__tab_mains__main__bottom--img__date
-              = put.bestby_date_y
-              %span /
-              = put.bestby_date_m
-              %span /
-              = put.bestby_date_d
+        %ul.main__center__tab_mains__main__list
+          - @puts_7.each do |put|
+            =render "index", put: put
 
+    #freezer_box.main__center__tab_mains
+      .main__center__tab_mains__main
+        冷凍食品類
+        %ul.main__center__tab_mains__main__list
+          - @puts_8.each do |put|
+            =render "index", put: put
+
+      .main__center__tab_mains__main
+        アイス類
+        %ul.main__center__tab_mains__main__list
+          - @puts_9.each do |put|
+            =render "index", put: put
+
+      .main__center__tab_mains__main
+        氷類
+        %ul.main__center__tab_mains__main__list
+          - @puts_10.each do |put|
+            =render "index", put: put
+
+      .main__center__tab_mains__main
+        その他
+        %ul.main__center__tab_mains__main__list
+          - @puts_11.each do |put|
+            =render "index", put: put
 
 

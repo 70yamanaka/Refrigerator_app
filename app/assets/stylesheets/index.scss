@@ -16,7 +16,7 @@
       text-decoration: none;
       margin-right: 10px;
       display: block;
-      width: 160px;
+      width: 80px;
       padding: 0.8em;
       text-align: center;
       text-decoration: none;
@@ -24,6 +24,8 @@
       border: 2px solid yellow;
       border-radius: 3px;
       transition: .4s;
+      font-size: 12pt;
+      height: 80px;
       &:hover {
         background: yellow;
 	      color: black;
@@ -33,7 +35,7 @@
       text-decoration: none;
       margin-right: 10px;
       display: block;
-      width: 160px;
+      width: 80px;
       padding: 0.8em;
       text-align: center;
       text-decoration: none;
@@ -41,6 +43,8 @@
       border: 2px solid yellow;
       border-radius: 3px;
       transition: .4s;
+      height: 80px;
+      font-size: 12pt;
       &:hover {
         background: yellow;
 	      color: black;
@@ -116,26 +120,27 @@
       &__main {
         border-bottom: 1px solid #eee;
         position: relative;
-        &__bottom{
-          background-color: #ffffff;
-          font-size: 20px;
-          color: red;
-        }
-      }
-      &__box {
-        border-bottom:solid 1px #EEEEEE;
-        &__bottom{
-          background-color: #ffffff;
-          color: #cccccc;
+        &__list{
           display: flex;
-          &--img{
-            margin-right: 20px;
+          flex-wrap: wrap;
+          &__data {
+            margin: 10px;
             &:hover {
-              background-color: #F5F5F5 ;
+              opacity: 0.5;
+            }
+            &__image {
+              &__name {
+                text-decoration: none;
+              }
+              &__date {
+              }
             }
           }
         }
       }
+      
+
+
     }
     input[name="tab_item"] {
       display: none;
