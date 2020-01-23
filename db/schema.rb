@@ -14,9 +14,9 @@ ActiveRecord::Schema.define(version: 2020_01_16_033056) do
 
   create_table "puts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "image", null: false
-    t.integer "bestby_date_y"
-    t.integer "bestby_date_m"
-    t.integer "bestby_date_d"
+    t.text "bestby_date_y"
+    t.text "bestby_date_m"
+    t.text "bestby_date_d"
     t.integer "category", default: 0, null: false
     t.integer "count", null: false
     t.string "name", null: false
