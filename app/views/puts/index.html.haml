@@ -4,6 +4,8 @@
     - if user_signed_in?
       = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "main__header__logout"
       = link_to "追加する", new_put_path , class: "main__header__others"
+      .main__header__daytime
+        ※ここに時計が表示されます。
   .main__user
     .main__user__add
       = current_user.nickname 
