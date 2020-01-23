@@ -33,6 +33,6 @@
         .show-main__container__data__memo--content
           = @put.memo
   .show-main__edit
-    = submit_tag '変更する', class: "show-main__edit__submit"
+    = link_to "変更する",edit_put_path,class:"show-main__edit__submit"
   .show-main__destroy
     = link_to "削除する",put_path(@put), method: :delete ,class:"show-main__destroy__submit"
