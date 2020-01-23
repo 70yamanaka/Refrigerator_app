@@ -33,7 +33,7 @@
       .exhibitcontent__main__third__required
         必須
       .exhibitcontent__main__third__answer
-        = f.select :category, [["--", 0],["肉類", 1],["野菜類", 2],["海鮮類",3],["飲料水類",4],["調味料類",5],["惣菜類",6],["冷蔵庫に入れるその他",7], ["冷凍食品類", 8], ["アイス類", 9], ["氷類", 10], ["冷凍庫に入れるその他", 11]], {}, {class: "exhibitcontent__main__third__answer--1"}
+        = f.select :category, Put.categories.keys, {}, {class: "exhibitcontent__main__third__answer--1"}
 
 
     .exhibitcontent__main__forth

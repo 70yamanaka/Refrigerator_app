@@ -5,18 +5,34 @@
     詳細ページ
   .show-main__container
     .show-main__container__image
-      = image_tag "fish.jpg", size: "300x300"
+      = image_tag @put.image.url, size: "300x300"
     .show-main__container__data
       .show-main__container__data__category
-        = @put.name
+        = @put.category
       .show-main__container__data__name
-        この魚は秋刀魚です
+        この
+        %span.txtred<>
+        = @put.category
+        は
+        %span.txtred<>
+        = @put.name
+        %span.txtred<>
+        です
       .show-main__container__data__count
-        残り１です
+        残り
+        %span.txtred<>
+        = @put.count
+        %span.txtred<>
+        です
       .show-main__container__data__bestby_date
-        2020/2/3までに食べてください
+        = @put.bestby_date_y
+        %span.txtred<> /
+        = @put.bestby_date_m
+        %span.txtred<> /
+        = @put.bestby_date_d
+        までに食べてください
       .show-main__container__data__memo
-        日持ち悪い
+        = @put.memo
   .show-main__edit
     = submit_tag '変更する', class: "show-main__edit__submit"
   .show-main__destroy
