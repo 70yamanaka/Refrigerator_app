@@ -1,127 +1,130 @@
-*{
-  box-sizing: border-box;
-}
+// *{
+//   box-sizing: border-box;
+// }
 
-.main {
-  width: 100%;
-  min-height: 100%;
-  background-color: #F5F5F5;
-  font-size: 30px;
-  padding: 50px 100px 50px 100px;
-  &__header {
-    display: flex;
-    margin-bottom: 10px;
-    &__login {
-      text-decoration: none;
-      margin-right: 10px;
-      display: block;
-      width: 80px;
-      padding: 0.8em;
-      text-align: center;
-      text-decoration: none;
-      color: yellow;
-      border: 2px solid yellow;
-      border-radius: 3px;
-      transition: .4s;
-      height: 80px;
-      font-size: 12pt;
-      &:hover {
-        background: yellow;
-	      color: black;
-      }
-    }
-    &__new {
-      text-decoration: none;
-      text-decoration: none;
-      margin-right: 10px;
-      display: block;
-      width: 80px;
-      height: 80px;
-      font-size: 12pt;
-      padding: 0.8em;
-      text-align: center;
-      color: yellow;
-      border: 2px solid yellow;
-      border-radius: 3px;
-      transition: .4s;
-      &:hover {
-        background: yellow;
-	      color: black;
-      }
-    }
-  }
-  &__user {
-    padding: 50px 0;
-    background-color: yellow;
-  }
-  &__center {
-    margin-top: 50px;
-    background-color: #fff;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    &__tab_item {
-      width: calc(100%/2);
-      height: 74px;
-      background-color: #eee;
-      line-height: 72px;
-      font-size: 30px;
-      text-align: center;
-      color: #565656;
-      display: block;
-      float: left;
-      text-align: center;
-      font-weight: 700;
-      transition: all 0.2s ease;
-      cursor: pointer;
-    }
-    &__tab_mains {
-      display: none;
-      clear: both;
-      overflow: hidden;
-      cursor: pointer;
-      &__main {
-        border-bottom: 1px solid #eee;
-        position: relative;
-        &__bottom{
-          background-color: #ffffff;
-          font-size: 20px;
-          color: red;
-          display: flex;
-          &--img{
-            margin-right: 20px;
-            &:hover {
-              background-color: #F5F5F5 ;
-            }
-          }
-        }
-      }
-      &__box {
-        border-bottom:solid 1px #EEEEEE;
-        &__bottom{
-          background-color: #ffffff;
-          color: #cccccc;
-          display: flex;
-          &--img{
-            margin-right: 20px;
-            &:hover {
-              background-color: #F5F5F5 ;
-            }
-          }
-        }
-      }
-    }
-    input[name="tab_item"] {
-      display: none;
-    }
-  }
-  #refrigerator:checked ~ #refrigerator_main,
-  #freezer:checked ~ #freezer_box{
-    display: block;
-  }
-  .main__center input:checked + .main__center__tab_item {
-    background-color: #fff;
-    border-top: 2px solid #ea352d;
-    height: 72px;
-    line-height: 72px;
-  }
-}
+// .in {
+//   background: image-url("vegetable.jpeg");
+//   background-size: cover;
+  
+//   &__main {
+//     font-size: 30px;
+//     padding: 50px 100px 500px 100px;
+//     &__header {
+//       display: flex;
+//       padding: 30px;
+//       &__login {
+//         text-decoration: none;
+//         margin-right: 10px;
+//         display: block;
+//         width: 80px;
+//         padding: 0.8em;
+//         text-align: center;
+//         text-decoration: none;
+//         color: yellow;
+//         border: 2px solid yellow;
+//         border-radius: 3px;
+//         transition: .4s;
+//         height: 80px;
+//         font-size: 12pt;
+//         &:hover {
+//           background: yellow;
+//           color: black;
+//         }
+//       }
+//       &__new {
+//         text-decoration: none;
+//         text-decoration: none;
+//         margin-right: 10px;
+//         display: block;
+//         width: 80px;
+//         height: 80px;
+//         font-size: 12pt;
+//         padding: 0.8em;
+//         text-align: center;
+//         color: yellow;
+//         border: 2px solid yellow;
+//         border-radius: 3px;
+//         transition: .4s;
+//         &:hover {
+//           background: yellow;
+//           color: black;
+//         }
+//       }
+//     }
+//     &__user {
+//       padding: 50px 0;
+//       background-color: #EEEEEE;
+//       border-radius: 60px 60px 0 0;
+//     }
+//     &__center {
+//       margin-top: 50px;
+//       background-color: #fff;
+//       margin: 0 auto;
+//       margin-bottom: 30px;
+//       &__tab_item {
+//         width: calc(100%/2);
+//         height: 74px;
+//         background-color: #eee;
+//         line-height: 72px;
+//         font-size: 30px;
+//         text-align: center;
+//         color: #565656;
+//         display: block;
+//         float: left;
+//         text-align: center;
+//         font-weight: 700;
+//         transition: all 0.2s ease;
+//         cursor: pointer;
+//       }
+//       &__tab_mains {
+//         display: none;
+//         clear: both;
+//         overflow: hidden;
+//         cursor: pointer;
+//         &__main {
+//           border-bottom: 1px solid #eee;
+//           position: relative;
+//           &__bottom{
+//             background-color: #ffffff;
+//             font-size: 20px;
+//             color: red;
+//             display: flex;
+//             &--img{
+//               margin-right: 20px;
+//               &:hover {
+//                 background-color: #F5F5F5 ;
+//               }
+//             }
+//           }
+//         }
+//         &__box {
+//           border-bottom:solid 1px #EEEEEE;
+//           &__bottom{
+//             background-color: #ffffff;
+//             color: #cccccc;
+//             display: flex;
+//             &--img{
+//               margin-right: 20px;
+//               &:hover {
+//                 background-color: #F5F5F5 ;
+//               }
+//             }
+//           }
+//         }
+//       }
+//       input[name="tab_item"] {
+//         display: none;
+//       }
+//     }
+//     #refrigerator:checked ~ #refrigerator_main,
+//     #freezer:checked ~ #freezer_box{
+//       display: block;
+//     }
+//     .in__main__center input:checked + .in__main__center__tab_item {
+//       background-color: #fff;
+//       border-top: 2px solid #2C7CFF;
+//       height: 72px;
+//       line-height: 72px;
+//     }
+//   }
+// }

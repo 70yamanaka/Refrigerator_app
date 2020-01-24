@@ -1,11 +1,11 @@
 - if put.user_id == current_user.id
-  %li.main__center__tab_mains__main__list__data
-    =link_to put_path(put.id),class: "main__center__tab_mains__main__list__data__link" do
-      .main__center__tab_mains__main__list__data__link__image
+  %li.in__main__center__tab_mains__main__list__data
+    =link_to put_path(put.id),class: "in__main__center__tab_mains__main__list__data__link" do
+      .in__main__center__tab_mains__main__list__data__link__image
         = image_tag put.image.url, size: "150x150"
-        .main__center__tab_mains__main__list__data__link__image__name
+        .in__main__center__tab_mains__main__list__data__link__image__name
           = put.name
-        .main__center__tab_mains__main__list__dat__link__image__bestby_date
+        .in__main__center__tab_mains__main__list__dat__link__image__bestby_date
           = put.bestby_date_y
           %span.txtred<> /
           = put.bestby_date_m
