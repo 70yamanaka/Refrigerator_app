@@ -7,84 +7,40 @@
         = link_to "追加する", new_put_path , class: "in__main__header__others"
         .in__main__header__daytime
           ※ここに時計が表示されます。
-    .in__main__user
-      .in__main__user__add
-        = current_user.nickname 
-        %span.txtred<>
-          さん家の冷蔵庫
     .in__main__center
-      %input#refrigerator{checked: "checked", name: "tab_item", type: "radio"}
-      %label.in__main__center__tab_item{for: "refrigerator"}
-        冷蔵庫
-      %input#freezer{name: "tab_item", type: "radio"}
-      %label.in__main__center__tab_item{for: "freezer"}
-        冷凍庫
-      #refrigerator_main.in__main__center__tab_mains
-        .in__main__center__tab_mains__main
-          肉類
-          %ul.in__main__center__tab_mains__main__list
-            - @puts_1.each do |put|
-              =render "index", put: put
+      .in__main__center__top
+        .in__main__center__top__left
+          .in__main__center__top__left__outside
+            .in__main__center__top__left__outside__contents
+              上の左側
+        .in__main__center__top__right
+          .in__main__center__top__right__outside
+            .in__main__center__top__right__outside__contents
+              上の右側
+      .in__main__center__container
+        .in__main__center__container__left
+          .in__main__center__container__left__outside
+            .in__main__center__container__left__outside__contents
+              真ん中の左側
+        .in__main__center__container__right
+          .in__main__center__container__right__outside
+            .in__main__center__container__right__outside__contents
+              真ん中の右側
+      .in__main__center__bottom
+        .in__main__center__bottom__outside
+          .in__main__center__bottom__outside__contents
+            下一段目
+      .in__main__center__bottom1
+        .in__main__center__bottom1__outside
+          .in__main__center__bottom1__outside__contents
+            下二段目
 
-        .in__main__center__tab_mains__main
-          野菜類
-          %ul.in__main__center__tab_mains__main__list
-            - @puts_2.each do |put|
-              =render "index", put: put
-            
-        .in__main__center__tab_mains__main
-          海鮮類
-          %ul.in__main__center__tab_mains__main__list
-            - @puts_3.each do |put|
-              =render "index", put: put
 
-        .in__main__center__tab_mains__main
-          飲料水類
-          %ul.in__main__center__tab_mains__main__list
-            - @puts_4.each do |put|
-              =render "index", put: put
 
-        .in__main__center__tab_mains__main
-          調味料類
-          %ul.in__main__center__tab_mains__main__list
-            - @puts_5.each do |put|
-              =render "index", put: put
 
-        .in__main__center__tab_mains__main
-          惣菜類
-          %ul.in__main__center__tab_mains__main__list
-            - @puts_6.each do |put|
-              =render "index", put: put
 
-        .in__main__center__tab_mains__main
-          その他
-          %ul.in__main__center__tab_mains__main__list
-            - @puts_7.each do |put|
-              =render "index", put: put
 
-      #freezer_box.in__main__center__tab_mains
-        .in__main__center__tab_mains__main
-          冷凍食品類
-          %ul.in__main__center__tab_mains__main__list
-            - @puts_8.each do |put|
-              =render "index", put: put
 
-        .in__main__center__tab_mains__main
-          アイス類
-          %ul.in__main__center__tab_mains__main__list
-            - @puts_9.each do |put|
-              =render "index", put: put
 
-        .in__main__center__tab_mains__main
-          氷類
-          %ul.in__main__center__tab_mains__main__list
-            - @puts_10.each do |put|
-              =render "index", put: put
-
-        .in__main__center__tab_mains__main
-          その他
-          %ul.in__main__center__tab_mains__main__list
-            - @puts_11.each do |put|
-              =render "index", put: put
 
 
