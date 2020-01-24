@@ -258,6 +258,29 @@
           &__contents {
             background-color: #E0FFFF;
             padding: 10px;
+            display: flex;
+              flex-wrap: wrap;
+              &__data {
+                margin: 10px;
+                &:hover {
+                  opacity: 0.5;
+                }
+                &__link {
+                  text-decoration: none;
+                  font-size: 15px;
+                  &__image {
+                    border-radius: 30px;
+                    &__name {
+                      text-align: center;
+                      color: black;
+                      font-size: 20px;
+                    }
+                    &__bestby_date {
+                      color: black;
+                    }
+                  }
+                }
+              }
           }
         }
       }
