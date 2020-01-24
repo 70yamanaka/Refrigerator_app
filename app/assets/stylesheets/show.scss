@@ -1,4 +1,8 @@
 .show-main {
+  background: image-url("show.jpeg");
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 500px;
   &__logo {
     padding-top: 50px;
     font-size: 30px;
@@ -8,11 +12,13 @@
     font-size: 50px;
     text-align: center;
     margin: 0px 24%;
-    background-color: blue;
+    background-color: #DDDDDD;
+    border-radius: 20px 20px 0 0;
+    font-weight: 500;
   }
   &__container {
     margin: 0px 24%;
-    background-color: red;
+    background-color: #fff	;
     display: flex;
     padding: 20px;
     font-size: 20px;
@@ -20,7 +26,6 @@
       padding: 20px;
     }
     &__data {
-      background-color: green;
       margin: 20px;
       width: 50%;
       padding: 20px;
@@ -63,43 +68,44 @@
     }
   }
   &__edit {
-    padding: 30px;
+    padding: 30px 30px 0 30px;
     text-align: center;
     margin: 0px 24%;
-    background-color: yellow;
+    background-color: #fff;
     &__submit {
       width: 100%;
       display: block;
       line-height: 48px;
-      background-color: #AAAAAA;
+      background-color: yellow;
       font-size: 14px;
       font-weight: 400;
       font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
-      color: #FFFFFF;
+      color: black;
       text-align: center;
-      border: 1px solid #AAAAAA;  
+      border: 1px solid yellow;  
       cursor: pointer;  
       text-decoration: none;
       }
   }
   &__destroy {
     text-align: center;
-    padding: 30px;
+    padding: 20px 30px 30px 30px;
     margin: 0px 24%;
-    background-color: gold;
+    background-color: #fff;
     &__submit {
       width: 100%;
       display: block;
       line-height: 48px;
-      background-color: #AAAAAA;
+      background-color:red;
       font-size: 14px;
       font-weight: 400;
       font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
-      color: #FFFFFF;
+      color: white;
       text-align: center;
-      border: 1px solid #AAAAAA;  
+      border: 1px solid red;  
       cursor: pointer;  
       text-decoration: none;
     }
+    border-radius: 0 0 20px 20px;
   }
 }
