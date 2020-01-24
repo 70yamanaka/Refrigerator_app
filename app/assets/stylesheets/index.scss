@@ -42,8 +42,8 @@
         border: 2px solid black;
         border-radius: 3px;
         transition: .4s;
-        height: 80px;
         font-size: 12pt;
+        height: 80px;
         &:hover {
           background: black;
           color: white;
@@ -53,7 +53,7 @@
         text-decoration: none;
         margin-right: 10px;
         display: block;
-        width: 160px;
+        width: 80px;
         padding: 0.8em;
         text-align: center;
         text-decoration: none;
@@ -61,26 +61,30 @@
         border: 2px solid black;
         border-radius: 3px;
         transition: .4s;
+        font-size: 12pt;
+        height: 80px;
         &:hover {
           background: black;
-          color: #fff;
+          color: white;
         }
       }
       &__new {
         text-decoration: none;
-        text-decoration: none;
         margin-right: 10px;
         display: block;
-        width: 160px;
+        width: 80px;
         padding: 0.8em;
         text-align: center;
+        text-decoration: none;
         color: black;
         border: 2px solid black;
         border-radius: 3px;
         transition: .4s;
+        font-size: 12pt;
+        height: 80px;
         &:hover {
           background: black;
-          color: #fff;
+          color: white;
         }
       }
     }
@@ -98,9 +102,32 @@
             border-radius: 30px 0 0 0;
             padding: 10px;
             &__contents {
-              background-color: #F0F8FF;
+              background-color: #E0FFFF;
               border-radius: 30px 0 0 0;
               padding: 10px;
+              display: flex;
+              flex-wrap: wrap;
+              &__data {
+                margin: 10px;
+                &:hover {
+                  opacity: 0.5;
+                }
+                &__link {
+                  text-decoration: none;
+                  font-size: 15px;
+                  &__image {
+                    border-radius: 30px;
+                    &__name {
+                      text-align: center;
+                      color: black;
+                      font-size: 20px;
+                    }
+                    &__bestby_date {
+                      color: black;
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -114,7 +141,7 @@
             border-radius: 0 30px 30px 0;
             padding: 10px;
             &__contents {
-              background-color: #F0F8FF;
+              background-color: #E0FFFF;
               border-radius: 0 30px 30px 0;
               padding: 10px;
             }
@@ -133,7 +160,7 @@
             background-color: #FFEFD5;
             padding: 10px;
             &__contents {
-              background-color: #F0F8FF;
+              background-color: #E0FFFF;
               padding: 10px;
             }
           }
@@ -146,7 +173,7 @@
             background-color: #FFEFD5;
             padding: 10px;
             &__contents {
-              background-color: #F0F8FF;
+              background-color: #E0FFFF;
               padding: 10px;
             }
           }
@@ -160,7 +187,7 @@
           background-color: #FFEFD5;
           padding: 10px;
           &__contents {
-            background-color: #F0F8FF;
+            background-color: #E0FFFF;
             padding: 10px;
           }
         }
@@ -175,7 +202,7 @@
           border-radius: 0 0 30px 30px;
           padding: 10px;
           &__contents {
-            background-color: #F0F8FF;
+            background-color: #E0FFFF;
             border-radius: 0 0 30px 30px;
             padding: 10px;
           }
