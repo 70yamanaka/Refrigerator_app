@@ -3,8 +3,7 @@ class Put < ApplicationRecord
   attribute :category, ActiveRecord::Type::Integer.new
   enum category:{
     "------":0,
-    肉類: 1, 野菜類: 2, 海鮮類: 3, 飲料水類: 4, 調味料類: 5, 惣菜類: 6,
-    冷蔵庫に入れるその他: 7 ,冷凍食品類: 8 ,アイス類: 9 ,氷類: 10 ,冷凍庫に入れるその他: 11
+    1番目: 1, 2番目: 2, 3番目: 3, 4番目: 4, 5番目: 5, 6番目: 6
   }
   
   mount_uploader :image, ImageUploader
