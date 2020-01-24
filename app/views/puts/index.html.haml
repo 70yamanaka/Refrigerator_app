@@ -11,29 +11,40 @@
       .in__main__center__top
         .in__main__center__top__left
           .in__main__center__top__left__outside
-            .in__main__center__top__left__outside__contents
-              上の左側
+            %ul.in__main__center__top__left__outside__contents
+              - @puts_1.each do |put|
+                =render "index", put: put
+
         .in__main__center__top__right
           .in__main__center__top__right__outside
-            .in__main__center__top__right__outside__contents
-              上の右側
+            %ul.in__main__center__top__right__outside__contents
+              - @puts_2.each do |put|
+                =render "index2", put: put
+
       .in__main__center__container
         .in__main__center__container__left
           .in__main__center__container__left__outside
-            .in__main__center__container__left__outside__contents
-              真ん中の左側
+            %ul.in__main__center__container__left__outside__contents
+              - @puts_3.each do |put|
+                =render "index3", put: put
+
         .in__main__center__container__right
           .in__main__center__container__right__outside
-            .in__main__center__container__right__outside__contents
-              真ん中の右側
+            %ul.in__main__center__container__right__outside__contents
+              - @puts_4.each do |put|
+                =render "index4", put: put
+
       .in__main__center__bottom
         .in__main__center__bottom__outside
-          .in__main__center__bottom__outside__contents
-            下一段目
+          %ul.in__main__center__bottom__outside__contents
+            - @puts_5.each do |put|
+              =render "index5", put: put
+
       .in__main__center__bottom1
         .in__main__center__bottom1__outside
-          .in__main__center__bottom1__outside__contents
-            下二段目
+          %ul.in__main__center__bottom1__outside__contents
+            - @puts_6.each do |put|
+              =render "index6", put: put
 
 
 
