@@ -8,6 +8,22 @@ class PutsController < ApplicationController
     @puts_4 = Put.where(category: "4").order('created_at DESC')
     @puts_5 = Put.where(category: "5").order('created_at DESC')
     @puts_6 = Put.where(category: "6").order('created_at DESC')
+    @puts_7 = Put.where(category: "7").order('created_at DESC')
+    @puts_8 = Put.where(category: "8").order('created_at DESC')
+    @puts_9 = Put.where(category: "9").order('created_at DESC')
+    @puts_10 = Put.where(category: "10").order('created_at DESC')
+    @puts_11 = Put.where(category: "11").order('created_at DESC')
+    @puts_12 = Put.where(category: "12").order('created_at DESC')
+    @puts_13 = Put.where(category: "13").order('created_at DESC')
+    @puts_14 = Put.where(category: "14").order('created_at DESC')
+    @puts_15 = Put.where(category: "15").order('created_at DESC')
+    @puts_16 = Put.where(category: "16").order('created_at DESC')
+    @puts_17 = Put.where(category: "17").order('created_at DESC')
+    @puts_18 = Put.where(category: "18").order('created_at DESC')
+    @puts_19 = Put.where(category: "19").order('created_at DESC')
+    @puts_20 = Put.where(category: "20").order('created_at DESC')
+    @puts_21 = Put.where(category: "21").order('created_at DESC')
+    @puts_22 = Put.where(category: "22").order('created_at DESC')
   end
 
   def new
