@@ -69,6 +69,13 @@ class PutsController < ApplicationController
   def top
   end
 
+  def search
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
+
   private
   def put_params
     params.require(:put).permit(:image,:name,:bestby_date_y,:bestby_date_m,:bestby_date_d,:expiration_date_y,:expiration_date_m,:expiration_date_d,:category,:type, :count, :memo)

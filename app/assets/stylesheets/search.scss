@@ -108,80 +108,9 @@
     &__center {
       margin-top: 50px;
       margin: 0 auto;
-      &__tab_item {
-        width: calc(100%/2);
-        height: 74px;
-        background-color: white;
-        line-height: 72px;
-        font-size: 30px;
-        text-align: center;
-        color: #565656;
-        display: block;
-        float: left;
-        text-align: center;
-        font-weight: 700;
-        transition: all 0.2s ease;
-        cursor: pointer;
-        margin-bottom: 20px;
-        border-radius: 30px;
-      }
-      &__tab_mains {
+      &__search {
         background-color: #DDDDDD;
-        display: none;
-        clear: both;
-        overflow: hidden;
-        cursor: pointer;
-        border-radius: 30px;
-        &__main {
-          border-bottom: 1px solid #eee;
-          position: relative;
-          padding: 20px;
-          &__list{
-            display: flex;
-            flex-wrap: wrap;
-            background-color: #EEFFFF;
-            border-radius: 30px;
-            &__data {
-              border: solid black;
-              background-color: white;
-              padding: 10px;
-              text-align: center;
-              margin: 30px;
-              &:hover {
-                opacity: 0.5;
-              }
-              &__link {
-                text-decoration: none;
-                &__image {
-                  border-radius: 30px;
-                  &__name {
-                    text-align: center;
-                    color: black;
-                    font-size: 20px;
-                  }
-                  &__bestby_date {
-                    color: black;
-                    font-size: 17px;
-                  }
-
-                }
-              }
-            }
-          }
-        }
       }
-      input[name="tab_item"] {
-        display: none;
-      }
-    }
-    #refrigerator:checked ~ #refrigerator_main,
-    #freezer:checked ~ #freezer_box{
-      display: block;
-    }
-    .in__main__center input:checked + .in__main__center__tab_item {
-      background-color: #A7F1FF;
-      height: 74px;
-      line-height: 74px;
     }
   }
 }
