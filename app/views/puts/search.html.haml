@@ -1,0 +1,19 @@
+.in
+  .in__main
+    = render 'refrigerator'
+    .in__main__header
+      - if user_signed_in?
+        = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "in__main__header__logout", data: { confirm: 'ログアウトしますか？' }
+        .in__main__header__new
+          = render 'new'
+        .in__main__header__daytime
+          = render 'time'
+        = form_with(url: search_puts_path, local: true, method: :get, class: "search-form") do |form|
+          = form.text_field :keyword, placeholder: "検索する", class: "search-input"
+          = form.submit "検索", class: "search-btn"
+
+    .in__main__center
+      %ul.in__main__center__search
+        #result.in__main__center__search__main
+          - @puts.each do |put|
+            = render partial: "search", locals: { put: put }

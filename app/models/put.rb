@@ -12,6 +12,9 @@ class Put < ApplicationRecord
     冷凍庫の乳製品類: 18, 冷凍庫のデザート類: 19, 冷凍庫の飲料類: 20,
     冷凍庫の調味料類: 21, 冷凍庫のその他: 22
   }
-  
+  def self.search(search)
+    return Put.all() unless search
+    Put.where('name LIKE(?)', "%#{search}%")
+  end
   mount_uploader :image, ImageUploader
 end
