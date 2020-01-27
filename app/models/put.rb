@@ -13,11 +13,8 @@ class Put < ApplicationRecord
     冷凍庫の調味料類: 21, 冷凍庫のその他: 22
   }
   def self.search(search)
-    if search
-      Put.where('text LIKE(?)', "%#{search}%")
-    else
-      Put.all
-    end
+    return Put.all() unless search
+    Put.where('name LIKE(?)', "%#{search}%")
   end
   mount_uploader :image, ImageUploader
 end

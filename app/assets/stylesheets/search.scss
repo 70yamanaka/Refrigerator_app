@@ -110,6 +110,40 @@
       margin: 0 auto;
       &__search {
         background-color: #DDDDDD;
+        position: relative;
+        padding: 20px;
+        border-radius: 30px;
+        &__main {
+          display: flex;
+          flex-wrap: wrap;
+          background-color: #EEFFFF;
+          border-radius: 30px;
+          &__data {
+            border: solid black;
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            margin: 30px;
+            &:hover {
+              opacity: 0.5;
+            }
+            &__link {
+              text-decoration: none;
+              &__image {
+                border-radius: 30px;
+                &__name {
+                  text-align: center;
+                  color: black;
+                  font-size: 20px;
+                }
+                &__bestby_date {
+                  color: black;
+                  font-size: 17px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

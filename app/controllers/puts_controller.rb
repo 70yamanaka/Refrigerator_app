@@ -70,6 +70,7 @@ class PutsController < ApplicationController
   end
 
   def search
+    @puts = Put.search(params[:keyword])
     respond_to do |format|
       format.html
       format.json
