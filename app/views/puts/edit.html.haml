@@ -1,61 +1,61 @@
-.logo
-  = render 'refrigerator'
-.exhibitcontent
-  = form_with model: @put,class:"exhibitcontent_main", local: true do |f|
-    .exhibitcontent__main__title
-      情報を入力してください
+-# .logo
+-#   = render 'refrigerator'
+-# .exhibitcontent
+-#   = form_with model: @put,class:"exhibitcontent_main", local: true do |f|
+-#     .exhibitcontent__main__title
+-#       情報を入力してください
     
-    .exhibitcontent__main__first
-      .exhibitcontent__main__first__question
-        画像
-      .exhibitcontent__main__first__required
-        必須
-      .exhibitcontent__main__first__answer
-      = image_tag @put.image.url, size: "150x150"
+-#     .exhibitcontent__main__first
+-#       .exhibitcontent__main__first__question
+-#         画像
+-#       .exhibitcontent__main__first__required
+-#         必須
+-#       .exhibitcontent__main__first__answer
+-#       = image_tag @put.image.url, size: "150x150"
     
-    .exhibitcontent__main__second
-      .exhibitcontent__main__second__question
-        消費期限
-      .exhibitcontent__main__second__required
-        任意
-      .exhibitcontent__main__second__answer
-        = f.select :bestby_date_y, [["--"],["2020年", "2020年"],["2021年", "2021年"],["2022年", "2022年"],["2023年", "2023年"]], {}, {class: "exhibitcontent__main__second__answer--1"}
-        = f.select :bestby_date_m, [["--"],["1月"],["2月"],["3月"],["4月"],["5月"],["6月"],["7月"],["8月"],["9月"],["10月"],["11月"],["12月"]], {}, {class: "exhibitcontent__main__second__answer--2"}
-        = f.select :bestby_date_d, [["--"],["1日"],["2日"],["3日"],["4日"],["5日"],["6日"],["7日"],["8日"],["9日"],["10日"],["11日"],["12日"],["13日"],["14日"],["15日"],["16日"],["17日"],["18日"],["19日"],["20日"],["21日"],["22日"],["23日"],["24日"],["25日"],["26日"],["27日"],["28日"],["29日"],["30日"],["31日"]], {}, {class: "exhibitcontent__main__second__answer--3"}
+-#     .exhibitcontent__main__second
+-#       .exhibitcontent__main__second__question
+-#         消費期限
+-#       .exhibitcontent__main__second__required
+-#         任意
+-#       .exhibitcontent__main__second__answer
+-#         = f.select :bestby_date_y, [["--"],["2020年", "2020年"],["2021年", "2021年"],["2022年", "2022年"],["2023年", "2023年"]], {}, {class: "exhibitcontent__main__second__answer--1"}
+-#         = f.select :bestby_date_m, [["--"],["1月"],["2月"],["3月"],["4月"],["5月"],["6月"],["7月"],["8月"],["9月"],["10月"],["11月"],["12月"]], {}, {class: "exhibitcontent__main__second__answer--2"}
+-#         = f.select :bestby_date_d, [["--"],["1日"],["2日"],["3日"],["4日"],["5日"],["6日"],["7日"],["8日"],["9日"],["10日"],["11日"],["12日"],["13日"],["14日"],["15日"],["16日"],["17日"],["18日"],["19日"],["20日"],["21日"],["22日"],["23日"],["24日"],["25日"],["26日"],["27日"],["28日"],["29日"],["30日"],["31日"]], {}, {class: "exhibitcontent__main__second__answer--3"}
 
-    .exhibitcontent__main__third
-      .exhibitcontent__main__third__question
-        カテゴリー
-      .exhibitcontent__main__third__required
-        必須
-      .exhibitcontent__main__third__answer
-        = f.select :category, Put.categories.keys, {}, {class: "exhibitcontent__main__third__answer--1"}
+-#     .exhibitcontent__main__third
+-#       .exhibitcontent__main__third__question
+-#         カテゴリー
+-#       .exhibitcontent__main__third__required
+-#         必須
+-#       .exhibitcontent__main__third__answer
+-#         = f.select :category, Put.categories.keys, {}, {class: "exhibitcontent__main__third__answer--1"}
 
-    .exhibitcontent__main__forth
-      .exhibitcontent__main__forth__question
-        個数
-      .exhibitcontent__main__forth__required
-        必須
-      .exhibitcontent__main__forth__answer
-        = f.select :count, [["--"],["1"],["2"],["3"],["4"],["5"],["6"],["7"],["8"],["9"],["10"],["11"],["12"],["13"],["14"],["15"],["16"],["17"],["18"],["19"],["20"],["21"],["22"],["23"],["24"],["25"],["26"],["27"],["28"],["29"],["30"],["31"]], {}, {class: "exhibitcontent__main__forth__answer--1"}
+-#     .exhibitcontent__main__forth
+-#       .exhibitcontent__main__forth__question
+-#         個数
+-#       .exhibitcontent__main__forth__required
+-#         必須
+-#       .exhibitcontent__main__forth__answer
+-#         = f.select :count, [["--"],["1"],["2"],["3"],["4"],["5"],["6"],["7"],["8"],["9"],["10"],["11"],["12"],["13"],["14"],["15"],["16"],["17"],["18"],["19"],["20"],["21"],["22"],["23"],["24"],["25"],["26"],["27"],["28"],["29"],["30"],["31"]], {}, {class: "exhibitcontent__main__forth__answer--1"}
     
-    .exhibitcontent__main__fifth
-      .exhibitcontent__main__fifth__question
-        名前
-      .exhibitcontent__main__fifth__required
-        必須
-      .exhibitcontent__main__fifth__answer
-        = f.text_field :name, placeholder:"名前を書いてください"
+-#     .exhibitcontent__main__fifth
+-#       .exhibitcontent__main__fifth__question
+-#         名前
+-#       .exhibitcontent__main__fifth__required
+-#         必須
+-#       .exhibitcontent__main__fifth__answer
+-#         = f.text_field :name, placeholder:"名前を書いてください"
     
-    .exhibitcontent__main__sixth
-      .exhibitcontent__main__sixth__question
-        備考
-      .exhibitcontent__main__sixth__required
-        任意
-      .exhibitcontent__main__sixth__answer
-        = f.text_field :memo, placeholder:"メモを書いてください"
+-#     .exhibitcontent__main__sixth
+-#       .exhibitcontent__main__sixth__question
+-#         備考
+-#       .exhibitcontent__main__sixth__required
+-#         任意
+-#       .exhibitcontent__main__sixth__answer
+-#         = f.text_field :memo, placeholder:"メモを書いてください"
     
-    .exhibitcontent__main__seventh
-      = f.submit '保存する', class: 'exhibitcontent_main__sixth--submit'
-      = link_to "もどる","#",class: 'exhibitcontent_main__sixth--back'
+-#     .exhibitcontent__main__seventh
+-#       = f.submit '保存する', class: 'exhibitcontent_main__sixth--submit'
+-#       = link_to "もどる","#",class: 'exhibitcontent_main__sixth--back'
     
