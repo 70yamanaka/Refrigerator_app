@@ -1,68 +1,68 @@
-.inbox
-  .inbox__logo
+.inbox1
+  .inbox1__logo
     = render 'refrigerator'
-  .inbox__exhibitcontent
-    = form_with model: @put,class:"inbox__exhibitcontent_main", local: true do |f|
-      .inbox__exhibitcontent__main__title
+  .inbox1__exhibitcontent
+    = form_with model: @put,class:"inbox1__exhibitcontent_main", local: true do |f|
+      .inbox1__exhibitcontent__main__title
         情報を入力してください
-      .inbox__exhibitcontent__main__outside
-        .inbox__exhibitcontent__main__outside__first
-          .inbox__exhibitcontent__main__outside__first__question
+      .inbox1__exhibitcontent__main__outside
+        .inbox1__exhibitcontent__main__outside__first
+          .inbox1__exhibitcontent__main__outside__first__question
             画像
-          .inbox__exhibitcontent__main__outside__first__required
+          .inbox1__exhibitcontent__main__outside__first__required
             必須
-          .inbox__exhibitcontent__main__outside__first__answer
+          .inbox1__exhibitcontent__main__outside__first__answer
             = image_tag @put.image.url, size: "150x150"
 
-        .inbox__exhibitcontent__main__outside__second
-          .inbox__exhibitcontent__main__outside__second__name
-            .inbox__exhibitcontent__main__outside__second__name__question
+        .inbox1__exhibitcontent__main__outside__second
+          .inbox1__exhibitcontent__main__outside__second__name
+            .inbox1__exhibitcontent__main__outside__second__name__question
               名前
-            .inbox__exhibitcontent__main__outside__second__name__required
+            .inbox1__exhibitcontent__main__outside__second__name__required
               必須
-            .inbox__exhibitcontent__main__outside__second__name__answer
-              = f.text_field :name, placeholder:"名前を書いてください", class: "inbox__exhibitcontent__main__outside__second__name__answer--1"
+            .inbox1__exhibitcontent__main__outside__second__name__answer
+              = f.text_field :name, placeholder:"名前を書いてください", class: "inbox1__exhibitcontent__main__outside__second__name__answer--1"
 
-          .inbox__exhibitcontent__main__outside__second__category
-            .inbox__exhibitcontent__main__outside__second__category__question
+          .inbox1__exhibitcontent__main__outside__second__category
+            .inbox1__exhibitcontent__main__outside__second__category__question
               カテゴリー
-            .inbox__exhibitcontent__main__outside__second__category__required
+            .inbox1__exhibitcontent__main__outside__second__category__required
               必須
-            .inbox__exhibitcontent__main__outside__second__category__answer
-              = f.select :category, Put.categories.keys, {}, {class: "inbox__exhibitcontent__main__outside__second__category__answer--1"}
+            .inbox1__exhibitcontent__main__outside__second__category__answer
+              = f.select :category, Put.categories.keys, {}, {class: "inbox1__exhibitcontent__main__outside__second__category__answer--1"}
         
         
 
-        .inbox__exhibitcontent__main__outside__third
-          .inbox__exhibitcontent__main__outside__third__question
+        .inbox1__exhibitcontent__main__outside__third
+          .inbox1__exhibitcontent__main__outside__third__question
             消費期限
-          .inbox__exhibitcontent__main__outside__third__required
+          .inbox1__exhibitcontent__main__outside__third__required
             必須
-          .inbox__exhibitcontent__main__outside__third__answer
-            = f.select :bestby_date_y, [["--"],["2020年", "2020年"],["2021年", "2021年"],["2022年", "2022年"],["2023年", "2023年"]], {}, {class: "inbox__exhibitcontent__main__outside__third__answer--1"}
-            = f.select :bestby_date_m, [["--"],["1月", "1月"],["2月", "2月"],["3月", "3月"],["4月", "4月"],["5月", "5月"],["6月", "6月"],["7月", "7月"],["8月", "8月"],["9月", "9月"],["10月", "10月"],["11月", "11月"],["12月", "12月"]], {}, {class: "inbox__exhibitcontent__main__outside__third__answer--2"}
-            = f.select :bestby_date_d, [["--"],["1日", "1日"],["2日", "2日"],["3日", "3日"],["4日", "4日"],["5日", "5日"],["6日", "6日"],["7日", "7日"],["8日", "8日"],["9日", "9日"],["10日", "10日"],["11日", "11日"],["12日", "12日"],["13日", "13日"],["14日", "14日"],["15日", "15日"],["16日", "16日"],["17日", "17日"],["18日", "18日"],["19日", "19日"],["20日", "20日"],["21日", "21日"],["22日", "22日"],["23日", "23日"],["24日", "24日"],["25日", "25日"],["26日", "26日"],["27日"], "27日",["28日", "28日"],["29日", "29日"],["30日", "30日"],["31日", "31日"]], {}, {class: "inbox__exhibitcontent__main__outside__third__answer--3"}
+          .inbox1__exhibitcontent__main__outside__third__answer
+            = f.select :bestby_date_y, [["--"],["2020年", "2020年"],["2021年", "2021年"],["2022年", "2022年"],["2023年", "2023年"]], {}, {class: "inbox1__exhibitcontent__main__outside__third__answer--1"}
+            = f.select :bestby_date_m, [["--"],["1月", "1月"],["2月", "2月"],["3月", "3月"],["4月", "4月"],["5月", "5月"],["6月", "6月"],["7月", "7月"],["8月", "8月"],["9月", "9月"],["10月", "10月"],["11月", "11月"],["12月", "12月"]], {}, {class: "inbox1__exhibitcontent__main__outside__third__answer--2"}
+            = f.select :bestby_date_d, [["--"],["1日", "1日"],["2日", "2日"],["3日", "3日"],["4日", "4日"],["5日", "5日"],["6日", "6日"],["7日", "7日"],["8日", "8日"],["9日", "9日"],["10日", "10日"],["11日", "11日"],["12日", "12日"],["13日", "13日"],["14日", "14日"],["15日", "15日"],["16日", "16日"],["17日", "17日"],["18日", "18日"],["19日", "19日"],["20日", "20日"],["21日", "21日"],["22日", "22日"],["23日", "23日"],["24日", "24日"],["25日", "25日"],["26日", "26日"],["27日"], "27日",["28日", "28日"],["29日", "29日"],["30日", "30日"],["31日", "31日"]], {}, {class: "inbox1__exhibitcontent__main__outside__third__answer--3"}
 
         
 
-        .inbox__exhibitcontent__main__outside__forth
-          .inbox__exhibitcontent__main__outside__forth__count
-            .inbox__exhibitcontent__main__outside__forth__count__question
+        .inbox1__exhibitcontent__main__outside__forth
+          .inbox1__exhibitcontent__main__outside__forth__count
+            .inbox1__exhibitcontent__main__outside__forth__count__question
               個数
-            .inbox__exhibitcontent__main__outside__forth__count__required
+            .inbox1__exhibitcontent__main__outside__forth__count__required
               任意
-            .inbox__exhibitcontent__main__outside__forth__count__answer
-              = f.select :count, [["--"],["1"],["2"],["3"],["4"],["5"],["6"],["7"],["8"],["9"],["10"],["11"],["12"],["13"],["14"],["15"],["16"],["17"],["18"],["19"],["20"],["21"],["22"],["23"],["24"],["25"],["26"],["27"],["28"],["29"],["30"],["31"]], {}, {class: "inbox__exhibitcontent__main__outside__forth__count__answer--1"}
+            .inbox1__exhibitcontent__main__outside__forth__count__answer
+              = f.select :count, [["--"],["1"],["2"],["3"],["4"],["5"],["6"],["7"],["8"],["9"],["10"],["11"],["12"],["13"],["14"],["15"],["16"],["17"],["18"],["19"],["20"],["21"],["22"],["23"],["24"],["25"],["26"],["27"],["28"],["29"],["30"],["31"]], {}, {class: "inbox1__exhibitcontent__main__outside__forth__count__answer--1"}
           
-          .inbox__exhibitcontent__main__outside__forth__memo
-            .inbox__exhibitcontent__main__outside__forth__memo__question
+          .inbox1__exhibitcontent__main__outside__forth__memo
+            .inbox1__exhibitcontent__main__outside__forth__memo__question
               備考
-            .inbox__exhibitcontent__main__outside__forth__memo__required
+            .inbox1__exhibitcontent__main__outside__forth__memo__required
               任意
-            .inbox__exhibitcontent__main__outside__forth__memo__answer
-              = f.text_field :memo, placeholder:"メモを書いてください", class: "inbox__exhibitcontent__main__outside__forth__memo--1"
+            .inbox1__exhibitcontent__main__outside__forth__memo__answer
+              = f.text_field :memo, placeholder:"メモを書いてください", class: "inbox1__exhibitcontent__main__outside__forth__memo--1"
         
-        .inbox__exhibitcontent__main__outside__fifth
-          = f.submit '保存する', class: 'inbox__exhibitcontent__main__outside__fifth--submit'
-          = link_to "もどる",root_path,class: 'inbox__exhibitcontent__main__outside__fifth--back'
+        .inbox1__exhibitcontent__main__outside__fifth
+          = f.submit '保存する', class: 'inbox1__exhibitcontent__main__outside__fifth--submit'
+          = link_to "もどる",root_path,class: 'inbox1__exhibitcontent__main__outside__fifth--back'
         
