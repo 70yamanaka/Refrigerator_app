@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.in {
+.in1 {
   font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
   background: image-url("search.jpeg");
   background-size: cover;
@@ -12,102 +12,6 @@
     &__header {
       display: flex;
       padding: 30px;
-      &__logout {
-        text-decoration: none;
-        margin-right: 10px;
-        display: block;
-        width: 80px;
-        padding: 0.8em;
-        text-align: center;
-        text-decoration: none;
-        color: #005500	;
-        border: 2px solid #005500	;
-        border-radius: 3px;
-        transition: .4s;
-        font-size: 12pt;
-        height: 80px;
-        &:hover {
-          background: #005500	;
-          color: black;
-        }
-      }
-      &__new {
-        position: fixed;
-        width: 100px;
-        height: 100px;
-        left: 0;
-        top: 0;
-        border-radius: 0 0 20px 0;
-        background: green;
-        color: #ffffff;
-        text-align: center;
-        z-index: 100;
-        padding: 5px;
-        &__others {
-          font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
-          font-size: 20px;
-          text-decoration: none;
-          color: white;
-        }
-      }
-      &__login {
-        text-decoration: none;
-        margin-right: 10px;
-        display: block;
-        width: 80px;
-        padding: 0.8em;
-        text-align: center;
-        text-decoration: none;
-        color: #005500	;
-        border: 2px solid #005500	;
-        border-radius: 3px;
-        transition: .4s;
-        font-size: 12pt;
-        height: 80px;
-        &:hover {
-          background: #005500	;
-          color: white;
-        }
-      }
-      &__new {
-        text-decoration: none;
-        margin-right: 10px;
-        display: block;
-        width: 80px;
-        padding: 0.8em;
-        text-align: center;
-        text-decoration: none;
-        color: #005500	;
-        border: 2px solid #005500	;
-        border-radius: 3px;
-        transition: .4s;
-        font-size: 12pt;
-        height: 80px;
-        &:hover {
-          background: #005500	;
-          color: white;
-        }
-      }
-      &__daytime{
-        position: fixed;
-        width: 100px;
-        height: 100px;
-        right: 0;
-        top: 0;
-        border-radius: 0 0 0 20px;
-        background: green;
-        color: #ffffff;
-        text-align: center;
-        z-index: 100;
-        padding: 5px;
-        &__icon {
-          font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
-          font-size: 20px;
-        }
-      }
-      .search-form {
-        margin-left: 30px;
-      }
       .search-btn {
         display: inline-block;
         padding: 0.5em 1em;
@@ -123,6 +27,43 @@
         }
         &:focus {
           outline: none;
+        }
+      }
+      &__new {
+        position: fixed;
+        width: 110px;
+        height: 110px;
+        left: 0;
+        top: 0;
+        border-radius: 0 0 20px 0;
+        text-align: center;
+        z-index: 100;
+        padding: 5px;
+        background: #BB0000;
+        &__others {
+          font-size: 20px;
+          text-decoration: none;
+          color: white;
+        }
+        &:hover {
+          background: #FFD700	;
+          color: black;
+        }
+      }
+      &__daytime{
+        position: fixed;
+        width: 110px;
+        height: 110px;
+        right: 0;
+        top: 0;
+        border-radius: 0 0 0 20px;
+        background: #BB0000;
+        color: #ffffff;
+        text-align: center;
+        z-index: 100;
+        padding: 5px;
+        &__icon {
+          font-size: 20px;
         }
       }
 
@@ -148,6 +89,7 @@
             margin: 15px;
             &:hover {
               opacity: 0.5;
+              background-color: yellow;
             }
             &__link {
               text-decoration: none;
