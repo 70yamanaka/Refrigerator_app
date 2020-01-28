@@ -3,7 +3,8 @@
 }
 
 .in {
-  background: image-url("vegetable.jpeg");
+  font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
+  background: image-url("search.jpeg");
   background-size: cover;
   &__main {
     font-size: 30px;
@@ -104,6 +105,27 @@
           font-size: 20px;
         }
       }
+      .search-form {
+        margin-left: 30px;
+      }
+      .search-btn {
+        display: inline-block;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        background: #F00;
+        color: #FFF;
+        border-bottom: solid 4px #CC0000;
+        border-radius: 30px;
+        &:active {
+          -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+          border: none;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+
     }
     &__center {
       margin-top: 50px;
@@ -123,7 +145,7 @@
             background-color: white;
             padding: 10px;
             text-align: center;
-            margin: 30px;
+            margin: 15px;
             &:hover {
               opacity: 0.5;
             }
