@@ -3,46 +3,93 @@
   box-sizing: border-box;
 }
 
-.registrations {
-  &__title {
-    padding: 20px;
+.container {
+  background: image-url("regisrater.jpeg");
+  background-size: cover;
+  min-height: 1000px;
+  &__new {
     text-align: center;
-    margin: 10% 24% 0px;
-    background-color: #DDFFFF;
-    border-radius: 30px 30px 0 0;
-    font-size: 40px;
+    padding-top: 50px;
+    font-size: 30px;
+    padding-bottom: 20px;
     font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
-  }
-  &__main {
-    margin: 0px 24% ;
-    background-color: #DDFFFF;
-    border-radius: 0 0 30px 30px;
-    font-size: 20px;
-    font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
-    &__field {
-      padding: 10px;
-      text-align: center;
+    &__app{
+      display: inline-block;           /* 改行なしのブロック要素 */
+      position: relative;              /* 相対位置指定 */
+      width:600px;                    /* 横幅 */
+      height: 60px;                    /* 高さ */
+      text-align: center;              /* 水平方向は中央揃え */
+      line-height: 56px;               /* 行の高さ */
     }
-    &__password {
-      text-align: center;
+    &__app span {
+      display: block;                  /* ブロック要素 */
+      position: absolute;              /* 親要素の左上を基準位置 */
+      width: 100%;                     /* 横幅 */
+      height: 100%;                    /* 高さ */
+      border: 2px solid #333;          /* 罫線 */
+      transform-style: preserve-3d;    /* 重なりを3Dで表示 */
+      transition: 0.5s;   /* 変化時間 */
     }
-    &__actions {
-      text-align: center;
-      padding: 20px 10px 40px;
-      &__btn {
-        display: inline-block;
-        padding: 0.5em 1em;
-        text-decoration: none;
-        background: #668ad8;
-        color: #FFF;
-        border-bottom: solid 4px #627295;
-        border-radius: 3px;
-        &:active {
-          -webkit-transform: translateY(4px);
-          transform: translateY(4px);
-          border: none;
+    &__app span:nth-child(1) {
+      background-color: #ffffff;   /* Buttonボタンの色 */
+      color: #000000;          /* Buttonの文字の色 */
+      transform: rotateX(0deg);        /* 横軸の回転なし */
+      transform-origin: 0 50%  -30px;  /* transformの起点 */
+    }
+    &__app span:nth-child(2) {
+      background-color: #000000;   /* Clickボタンの色 */
+      color: #ffffff;          /* Clickの文字の色 */
+      transform: rotateX(90deg);       /* 横軸で90度回転 */
+      transform-origin: 0 50%  -30px;  /* transformの起点 */
+    }
+    &__app:hover span:nth-child(1) {
+      transform: rotateX(-90deg);      /* 横軸で前方に90度回転 */
+    }
+    &__app:hover span:nth-child(2) {
+      transform: rotateX(0deg);        /* 横軸の回転なし */
+    }
+    &__registrations {
+      &__title {
+        padding: 20px;
+        text-align: center;
+        margin: 30px 24% 0px;
+        background-color: #DDFFFF;
+        border-radius: 30px 30px 0 0;
+        font-size: 40px;
+        font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
+      }
+      &__main {
+        margin: 0px 24% ;
+        background-color: #DDFFFF;
+        border-radius: 0 0 30px 30px;
+        font-size: 20px;
+        font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
+        &__field {
+          padding: 10px;
+          text-align: center;
+        }
+        &__password {
+          text-align: center;
+        }
+        &__actions {
+          text-align: center;
+          padding: 20px 10px 40px;
+          &__btn {
+            display: inline-block;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            background: #668ad8;
+            color: #FFF;
+            border-bottom: solid 4px #627295;
+            border-radius: 3px;
+            &:active {
+              -webkit-transform: translateY(4px);
+              transform: translateY(4px);
+              border: none;
+            }
+          }
         }
       }
     }
-  }
+  }  
 }
