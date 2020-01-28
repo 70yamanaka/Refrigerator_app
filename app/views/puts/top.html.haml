@@ -1,38 +1,70 @@
-.in
-  .in__main
+.in2
+  .in2__main
     = render 'refrigerator'
-    .in__main__header
-      = link_to "ログイン", new_user_session_path, class: "in__main__header__login" 
-      = link_to "新規登録", new_user_registration_path, class: "in__main__header__new"
-      .in__main__header__daytime
-        ※ここに時計が表示されます。
-    .in__main__center
-      .in__main__center__top
-        .in__main__center__top__left
-          .in__main__center__top__left__outside
-            .in__main__center__top__left__outside__contents
-              上の左側
-        .in__main__center__top__right
-          .in__main__center__top__right__outside
-            .in__main__center__top__right__outside__contents
-              上の右側
-      .in__main__center__container
-        .in__main__center__container__left
-          .in__main__center__container__left__outside
-            .in__main__center__container__left__outside__contents
-              真ん中の左側
-        .in__main__center__container__right
-          .in__main__center__container__right__outside
-            .in__main__center__container__right__outside__contents
-              真ん中の右側
-      .in__main__center__bottom
-        .in__main__center__bottom__outside
-          .in__main__center__bottom__outside__contents
-            下一段目
-      .in__main__center__bottom1
-        .in__main__center__bottom1__outside
-          .in__main__center__bottom1__outside__contents
-            下二段目
+    .in2__main__header
+      = link_to "ログイン", new_user_session_path, class: "in2__main__header__login" 
+      = link_to "新規登録", new_user_registration_path, class: "in2__main__header__sign"
+    .in2__main__center
+      %input#refrigerator{checked: "checked", name: "tab_item", type: "radio"}
+      %label.in2__main__center__tab_item{for: "refrigerator"}
+        冷蔵庫
+      %input#freezer{name: "tab_item", type: "radio"}
+      %label.in2__main__center__tab_item{for: "freezer"}
+        冷凍庫
+      #refrigerator_main.in2__main__center__tab_mains
+        .in2__main__center__tab_mains__main
+          肉類
+          .in2__main__center__tab_mains__main__list
+            .in2__main__center__tab_mains__main__list__data
+              =link_to "",class: "in2__main__center__tab_mains__main__list__data__link" do
+                = image_tag "meat.jpeg", size: "120x120", class: "in2__main__center__tab_mains__main__list__data__link__image"
+                .in2__main__center__tab_mains__main__list__data__link__image__name
+                  豚肉
+                .in2__main__center__tab_mains__main__list__data__link__image__bestby_date
+                  2020年/10月/12日
+        .in2__main__center__tab_mains__main
+          野菜類
+        .in2__main__center__tab_mains__main
+          海鮮類
+        .in2__main__center__tab_mains__main
+          果物類
+        .in2__main__center__tab_mains__main
+          パン類
+        .in2__main__center__tab_mains__main
+          惣菜類
+        .in2__main__center__tab_mains__main
+          乳製品類
+        .in2__main__center__tab_mains__main
+          デザート類
+        .in2__main__center__tab_mains__main
+          飲料類
+        .in2__main__center__tab_mains__main
+          調味料類
+        .in2__main__center__tab_mains__main
+          その他
+      #freezer_box.in2__main__center__tab_mains
+        .in2__main__center__tab_mains__main
+          肉類
+        .in2__main__center__tab_mains__main
+          野菜類
+        .in2__main__center__tab_mains__main
+          海鮮類
+        .in2__main__center__tab_mains__main
+          果物類
+        .in2__main__center__tab_mains__main
+          パン類
+        .in2__main__center__tab_mains__main
+          冷凍食品類
+        .in2__main__center__tab_mains__main
+          乳製品類
+        .in2__main__center__tab_mains__main
+          デザート類
+        .in2__main__center__tab_mains__main
+          飲料類
+        .in2__main__center__tab_mains__main
+          調味料類
+        .in2__main__center__tab_mains__main
+          その他
 
 
 
