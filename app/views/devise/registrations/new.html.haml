@@ -1,25 +1,30 @@
-.registrations
-  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-    .registrations__title
-      新規登録
-    .registrations__main
-      .registrations__main__field
-        = f.label :ニックネーム
-        %br/
-        = f.text_field :nickname, autofocus: true, autocomplete: "nickname"
-      .registrations__main__field
-        = f.label :メールアドレス
-        %br/
-        = f.email_field :email, autofocus: true, autocomplete: "email"
-      .registrations__main__field
-        = f.label :パスワード
-        - if @minimum_password_length
-          %em
-            (#{@minimum_password_length} 文字)
-        %br/
-        = f.password_field :password, id: "js-password", autocomplete: "new-password"
-      .registrations__main__password
-        %input#js-passcheck{type: "checkbox"}
-        %label{for: "js-passcheck"} パスワードを表示する
-      .registrations__main__actions
-        = f.submit "登録する", class: "registrations__main__actions__btn"
+.container
+  .container__new
+    = link_to root_path, class: "container__new__app" do
+      %span 外でも冷蔵庫の中が見えるアプリ
+      %span ホームに戻る
+    .container__new__registrations
+      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+        .container__new__registrations__title
+          新規登録
+        .container__new__registrations__main
+          .container__new__registrations__main__field
+            = f.label :ニックネーム
+            %br/
+            = f.text_field :nickname, autofocus: true, autocomplete: "nickname"
+          .container__new__egistrations__main__field
+            = f.label :メールアドレス
+            %br/
+            = f.email_field :email, autofocus: true, autocomplete: "email"
+          .container__new__registrations__main__field
+            = f.label :パスワード
+            - if @minimum_password_length
+              %em
+                (#{@minimum_password_length} 文字)
+            %br/
+            = f.password_field :password, id: "js-password", autocomplete: "new-password"
+          .container__new__registrations__main__password
+            %input#js-passcheck{type: "checkbox"}
+            %label{for: "js-passcheck"} パスワードを表示する
+          .container__new__registrations__main__actions
+            = f.submit "登録する", class: "container__new__registrations__main__actions__btn"
