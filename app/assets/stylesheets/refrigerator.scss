@@ -1,5 +1,6 @@
 .app {
   text-align: center;
+  font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
   &__home{
     display: inline-block;           /* 改行なしのブロック要素 */
     position: relative;              /* 相対位置指定 */
