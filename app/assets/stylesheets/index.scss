@@ -127,6 +127,8 @@
             flex-wrap: wrap;
             background-color: #EEFFFF;
             border-radius: 30px;
+            height: 250px;
+            overflow: scroll;
             &__data {
               border: solid black;
               background-color: white;
