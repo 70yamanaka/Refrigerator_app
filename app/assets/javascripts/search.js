@@ -25,8 +25,8 @@ $(function() {
   search_list.append(html);
   }
 
-  $(".in__main__header__search-form__search-input").on("keyup", function() {
-    var input = $(".in__main__header__search-form__search-input").val();
+  $(".search-input").on("keyup", function() {
+    var input = $(".search-input").val();
     $.ajax({
       type: 'GET',
       url: '/puts/search',
