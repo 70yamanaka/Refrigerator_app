@@ -1,4 +1,5 @@
 .show-main {
+  font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
   background: image-url("show.jpeg");
   background-size: cover;
   height: 100%;
@@ -12,100 +13,102 @@
     font-size: 50px;
     text-align: center;
     margin: 0px 24%;
-    background-color: #DDDDDD;
-    border-radius: 20px 20px 0 0;
-    font-weight: 500;
+    background-color: #EEEEEE;
+    border-radius: 30px;
+    margin-bottom: 20px;
   }
   &__container {
+    border-radius: 30px;
     margin: 0px 24%;
-    background-color: #fff	;
-    display: flex;
+    background-color: #DDDDDD;
     padding: 20px;
     font-size: 20px;
-    &__image {
-      padding: 20px;
+    &__outside {
+      display: flex;
+      background-color: #EEFFFF;
+      border-radius: 30px;
+      margin-bottom: 20px;
+      &__image {
+        padding: 20px;
+        &__size {
+          border-radius: 30px;
+        }
+      }
+      &__data {
+        padding: 20px;
+        &__category {
+          display: flex;
+          &--content{
+            font-size: 25px;
+            margin-left: 20px;
+          }
+        }
+        &__name {
+          display: flex;
+          &--content{
+            font-size: 25px;
+            margin-left: 20px;
+          }
+        }
+        &__count {
+          display: flex;
+          &--content{
+            font-size: 25px;
+            margin-left: 20px;
+          }
+        }
+        &__bestby_date {
+          &--content{
+            font-size: 25px;
+            color: #F00;
+          }
+        }
+        &__memo {
+          &--content{
+            font-size: 25px;
+          }
+        }
+      }
     }
-    &__data {
-      margin: 20px;
-      width: 50%;
-      padding: 20px;
-      &__category {
-        margin: 10px;
-        display: flex;
-        &--content{
-          font-size: 25px;
-          margin-left: 50px;
-        }
-      }
-      &__name {
-        margin: 10px;
-        display: flex;
-        &--content{
-          font-size: 25px;
-          margin-left: 50px;
-        }
-      }
-      &__count {
-        margin: 10px;
-        display: flex;
-        &--content{
-          font-size: 25px;
-          margin-left: 50px;
-        }
-      }
-      &__bestby_date {
-        margin: 10px;
-        &--content{
-          font-size: 25px;
-        }
-      }
-      &__memo {
-        margin: 10px;
-        &--content{
-          font-size: 25px;
-        }
-      }
-    }
-  }
-  &__edit {
-    padding: 30px 30px 0 30px;
-    text-align: center;
-    margin: 0px 24%;
-    background-color: #fff;
-    &__submit {
-      width: 100%;
-      display: block;
-      line-height: 48px;
-      background-color: yellow;
-      font-size: 14px;
-      font-weight: 400;
-      font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
-      color: black;
+    &__btn {
+      background-color: #EEFFFF;
+      border-radius: 30px;
+      padding: 40px;
       text-align: center;
-      border: 1px solid yellow;  
-      cursor: pointer;  
-      text-decoration: none;
+      &__edit {
+        margin-bottom: 20px;
+        &__submit {
+          display: inline-block;
+          padding: 0.5em 1em;
+          text-decoration: none;
+          background: #FFD700	;
+          color: black;
+          border-bottom: solid 4px #DAA520	;
+          border-radius: 3px;
+          &:active {
+            -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+            border: none;
+          }
+        }
       }
-  }
-  &__destroy {
-    text-align: center;
-    padding: 20px 30px 30px 30px;
-    margin: 0px 24%;
-    background-color: #fff;
-    &__submit {
-      width: 100%;
-      display: block;
-      line-height: 48px;
-      background-color:red;
-      font-size: 14px;
-      font-weight: 400;
-      font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
-      color: white;
-      text-align: center;
-      border: 1px solid red;  
-      cursor: pointer;  
-      text-decoration: none;
+      &__destroy {
+        &__submit {
+          display: inline-block;
+          padding: 0.5em 1em;
+          text-decoration: none;
+          background: #32CD32;
+          color: #FFF;
+          border-bottom: solid 4px #006400;
+          border-radius: 3px;
+          &:active {
+            -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+            border: none;
+          }
+        }
+        
+      }
     }
-    border-radius: 0 0 20px 20px;
   }
 }
