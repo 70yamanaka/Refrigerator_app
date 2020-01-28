@@ -8,9 +8,9 @@
           = render 'new'
         .in__main__header__daytime
           = render 'time'
-        = form_with(url: search_puts_path, local: true, method: :get, class: "search-form") do |form|
-          = form.text_field :keyword, placeholder: "検索する", class: "search-input"
-          = form.submit "検索", class: "search-btn"
+        = form_with(url: search_puts_path, local: true, method: :get, class: "in__main__header__search-form") do |form|
+          = form.text_field :keyword, placeholder: "検索する", class: "in__main__header__search-form__search-input"
+          = form.submit "検索", class: "in__main__header__search-form__search-btn"
 
     .in__main__center
       %ul.in__main__center__search
