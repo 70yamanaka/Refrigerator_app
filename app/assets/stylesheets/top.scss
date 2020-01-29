@@ -101,15 +101,20 @@
                 text-decoration: none;
                 &__image {
                   border-radius: 30px;
-                  &__name {
-                    text-align: center;
-                    color: black;
-                    font-size: 20px;
-                  }
-                  &__bestby_date {
-                    color: black;
-                    font-size: 17px;
-                  }
+                  background: image-url("meat.jpeg");
+                  background-size: 120px 120px;
+                  margin: 0 auto;
+                  width: 120px;
+                  height: 120px;
+                }
+                &__name {
+                  text-align: center;
+                  color: black;
+                  font-size: 20px;
+                }
+                &__bestby_date {
+                  color: black;
+                  font-size: 17px;
                 }
               }
             }
