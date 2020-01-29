@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2020_01_26_122327) do
     t.text "bestby_date_m"
     t.text "bestby_date_d"
     t.integer "category", default: 0, null: false
-    t.integer "count", null: false
+    t.integer "count"
     t.string "name", null: false
     t.string "memo"
     t.bigint "user_id"
