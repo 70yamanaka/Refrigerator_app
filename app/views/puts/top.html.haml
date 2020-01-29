@@ -4,6 +4,8 @@
     .in2__main__header
       = link_to "ログイン", new_user_session_path, class: "in2__main__header__login" 
       = link_to "新規登録", new_user_registration_path, class: "in2__main__header__sign"
+      .in2__main__header__sign__description
+        ご利用頂きありがとうございます。まずはユーザー登録をしましょう！
     .in2__main__center
       %input#refrigerator{checked: "checked", name: "tab_item", type: "radio"}
       %label.in2__main__center__tab_item{for: "refrigerator"}
