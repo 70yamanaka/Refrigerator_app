@@ -25,17 +25,26 @@ Things you may want to cover:
 
 # refrigerator DB設計
 ## usersテーブ
-|Column|Type|Options|
-|------|----|-------|
-|password|string|null: false|
-|username|string|null: false|
+| Column             | Type   | Options     |
+| ------------------ | ------ | ----------- |
+| nickname           | string | null: false |
+| email              | string | null: false |
+| encrypted_password | string | null: false |
 ### Association
 - has_many :puts
 
 ## putsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|title|string|null: false|
-|image|string|null: false|
+| Column        | Type       | Options           |
+| ------------- | ---------- | ----------------- |
+| image         | text       | null: false       |
+| bestby_date_y | text       |                   |
+| bestby_date_m | text       |                   |
+| bestby_date_d | text       |                   |
+| category      | integer    | null: false       |
+| count         | integer    |                   |
+| name          | string     | null: false       |
+| memo          | string     |                   |
+| user_id       | references | foreign_key: true |
 ### Association
 - belongs_to : user
+
