@@ -77,6 +77,72 @@ class PutsController < ApplicationController
     end
   end
 
+  def refrigerator_meat
+  end
+
+  def refrigerator_vegetable
+  end
+
+  def refrigerator_fish
+  end
+
+  def refrigerator_fruit
+  end
+
+  def refrigerator_bread
+  end
+
+  def refrigerator_rice
+  end
+
+  def refrigerator_milk
+  end
+
+  def refrigerator_desert
+  end
+
+  def refrigerator_drink
+  end
+
+  def refrigerator_spice
+  end
+
+  def refrigerator_other
+  end
+
+  def freezer_meat
+  end
+
+  def freezer_vegetable
+  end
+
+  def freezer_fish
+  end
+
+  def freezer_fruit
+  end
+
+  def freezer_bread
+  end
+
+  def freezer_icefood
+  end
+
+  def freezer_milk
+  end
+
+  def freezer_desert
+  end
+
+  def freezer_drink
+  end
+
+  def freezer_icespice
+  end
+
+  def freezer_other
+  end
+
   private
   def put_params
     params.require(:put).permit(:image,:name,:bestby_date_y,:bestby_date_m,:bestby_date_d,:expiration_date_y,:expiration_date_m,:expiration_date_d,:category,:type, :count, :memo)
