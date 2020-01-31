@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+}
+
+.in3 {
+  font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
+  background: image-url("freezer.jpeg");
+  background-size: cover;
+  &__main {
+    font-size: 30px;
+    padding: 50px 50px 500px 50px;
+    &__header {
+      display: flex;
+      padding: 30px;
+      &__new {
+        position: fixed;
+        width: 110px;
+        height: 110px;
+        left: 0;
+        top: 0;
+        border-radius: 0 0 20px 0;
+        text-align: center;
+        z-index: 100;
+        padding: 5px;
+        background: #BB0000;
+        &__others {
+          font-size: 20px;
+          text-decoration: none;
+          color: white;
+        }
+        &:hover {
+          background: #FFD700	;
+          color: black;
+        }
+      }
+      &__daytime{
+        position: fixed;
+        width: 110px;
+        height: 110px;
+        right: 0;
+        top: 0;
+        border-radius: 0 0 0 20px;
+        background: #BB0000;
+        color: #ffffff;
+        text-align: center;
+        z-index: 100;
+        padding: 5px;
+        &__icon {
+          font-size: 20px;
+        }
+      }
+
+    }
+    &__center {
+      margin-top: 50px;
+      margin: 0 auto;
+      &__category {
+        background-color: #DDDDDD;
+        position: relative;
+        padding: 20px;
+        border-radius: 30px;
+        &__main {
+          display: flex;
+          flex-wrap: wrap;
+          background-color: #EEFFFF;
+          border-radius: 30px;
+          &__data {
+            border: solid black;
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            margin: 15px;
+            &:hover {
+              opacity: 0.5;
+              background-color: yellow;
+            }
+            &__link {
+              text-decoration: none;
+              &__image {
+                border-radius: 30px;
+                &__name {
+                  text-align: center;
+                  color: black;
+                  font-size: 20px;
+                }
+                &__bestby_date {
+                  color: black;
+                  font-size: 17px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

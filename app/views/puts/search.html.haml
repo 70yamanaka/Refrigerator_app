@@ -14,5 +14,6 @@
     .in1__main__center
       %ul.in1__main__center__search
         #result.in1__main__center__search__main
-          - @puts.each do |put|
-            = render partial: "search", locals: { put: put }
+          - if user_signed_in?
+            - @puts.each do |put|
+              = render partial: "search", locals: { put: put }

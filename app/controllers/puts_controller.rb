@@ -78,69 +78,91 @@ class PutsController < ApplicationController
   end
 
   def refrigerator_meat
+    @puts_1 = Put.where(category: "1").order('created_at DESC')
   end
 
   def refrigerator_vegetable
+    @puts_2 = Put.where(category: "2").order('created_at DESC')
   end
 
   def refrigerator_fish
+    @puts_3 = Put.where(category: "3").order('created_at DESC')
   end
 
   def refrigerator_fruit
+    @puts_4 = Put.where(category: "4").order('created_at DESC')
   end
 
   def refrigerator_bread
+    @puts_5 = Put.where(category: "5").order('created_at DESC')
   end
 
   def refrigerator_rice
+    @puts_6 = Put.where(category: "6").order('created_at DESC')
   end
 
   def refrigerator_milk
+    @puts_7 = Put.where(category: "7").order('created_at DESC')
   end
 
   def refrigerator_desert
+    @puts_8 = Put.where(category: "8").order('created_at DESC')
   end
 
   def refrigerator_drink
+    @puts_9 = Put.where(category: "9").order('created_at DESC')
   end
 
   def refrigerator_spice
+    @puts_10 = Put.where(category: "10").order('created_at DESC')
   end
 
   def refrigerator_other
+    @puts_11 = Put.where(category: "11").order('created_at DESC')
   end
 
   def freezer_meat
+    @puts_12 = Put.where(category: "12").order('created_at DESC')
   end
 
   def freezer_vegetable
+    @puts_13 = Put.where(category: "13").order('created_at DESC')
   end
 
   def freezer_fish
+    @puts_14 = Put.where(category: "14").order('created_at DESC')
   end
 
   def freezer_fruit
+    @puts_15 = Put.where(category: "15").order('created_at DESC')
   end
 
   def freezer_bread
+    @puts_16 = Put.where(category: "16").order('created_at DESC')
   end
 
   def freezer_icefood
+    @puts_17 = Put.where(category: "17").order('created_at DESC')
   end
 
   def freezer_milk
+    @puts_18 = Put.where(category: "18").order('created_at DESC')
   end
 
   def freezer_desert
+    @puts_19 = Put.where(category: "19").order('created_at DESC')
   end
 
   def freezer_drink
+    @puts_20 = Put.where(category: "20").order('created_at DESC')
   end
 
   def freezer_icespice
+    @puts_21 = Put.where(category: "21").order('created_at DESC')
   end
 
   def freezer_other
+    @puts_22 = Put.where(category: "22").order('created_at DESC')
   end
 
   private

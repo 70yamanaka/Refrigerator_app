@@ -1,0 +1,24 @@
+.in3
+  .in3__main
+    = render 'refrigerator'
+    .in3__main__header
+      - if user_signed_in?
+        .in3__main__header__new
+          = render 'new'
+        .in3__main__header__daytime
+          = render 'time'
+    .in3__main__center
+      %ul.in__main__center__tab_mains__main__list
+        - @puts_16.each do |put|
+          - if put.user_id == current_user.id
+            %li.in__main__center__tab_mains__main__list__data
+              =link_to put_path(put.id),class: "in__main__center__tab_mains__main__list__data__link" do
+                = image_tag put.image.url, size: "120x120", class: "in__main__center__tab_mains__main__list__data__link__image"
+                .in__main__center__tab_mains__main__list__data__link__image__name
+                  = put.name
+                .in__main__center__tab_mains__main__list__data__link__image__bestby_date
+                  = put.bestby_date_y
+                  %span.txtred<> /
+                  = put.bestby_date_m
+                  %span.txtred<> /
+                  = put.bestby_date_d
