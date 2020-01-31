@@ -35,24 +35,24 @@
         }
       }
       &__new {
-        position: fixed;
-        width: 110px;
-        height: 110px;
-        left: 0;
-        top: 0;
-        border-radius: 0 0 20px 0;
-        text-align: center;
-        z-index: 100;
-        padding: 5px;
-        background: #BB0000;
         &__others {
+          position: fixed;
+          width: 110px;
+          height: 110px;
+          left: 0;
+          top: 0;
+          border-radius: 0 0 20px 0;
+          text-align: center;
+          z-index: 100;
+          padding: 5px;
+          background: #BB0000;
           font-size: 20px;
           text-decoration: none;
           color: white;
-        }
-        &:hover {
-          background: #FFD700	;
-          color: black;
+          &:hover {
+            background: #FFD700	;
+            color: black;
+          }
         }
       }
       &__daytime{
