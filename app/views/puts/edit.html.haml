@@ -12,8 +12,14 @@
           .inbox1__exhibitcontent__main__outside__first__required
             必須
           .inbox1__exhibitcontent__main__outside__first__answer
-            = image_tag @put.image.url, size: "150x150"
-
+            .field.image
+              #img_field{:onclick => "$('#file').click()"}
+                - if @put.image.url.present?
+                  = image_tag(@put.image.url, size: "400x250")
+                - else
+                  %i.fas.fa-image
+                  %i.fas.fa-file-upload.add
+              =f.file_field :image, {class: "image", style: "display:none;", id: "file"}
         .inbox1__exhibitcontent__main__outside__second
           .inbox1__exhibitcontent__main__outside__second__name
             .inbox1__exhibitcontent__main__outside__second__name__question
