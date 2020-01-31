@@ -123,6 +123,13 @@
           position: relative;
           padding: 20px;
           text-align: center;
+          &__title {
+            text-decoration: none;
+            color: black;
+            &:hover {
+              color: #005FFF;
+            }
+          }
           &__list{
             display: flex;
             background-color: #EEFFFF;
