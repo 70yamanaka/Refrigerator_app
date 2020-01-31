@@ -19,7 +19,10 @@
         .show-main__container__outside__data__count
           ＜ 残り ＞
           .show-main__container__outside__data__count--content
-            = @put.count
+            - if @put.count.present?
+              = @put.count
+            - else
+              記載されていません
         .show-main__container__outside__data__bestby_date
           ＜ 消費期限 ＞
           .show-main__container__outside__data__bestby_date--content
@@ -32,7 +35,10 @@
         .show-main__container__outside__data__memo
           ＜ メモ ＞
           .show-main__container__outside__data__memo--content
-            = @put.memo
+            - if @put.memo.present?
+              = @put.memo
+            - else
+              記載されていません
     .show-main__container__btn
       .show-main__container__btn__edit
         = link_to "変更する",edit_put_path,class:"show-main__container__btn__edit__submit"
