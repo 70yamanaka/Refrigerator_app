@@ -1,23 +1,23 @@
 $(function(){
-  //querySelectorでfile_fieldを取得
-  var file_field = document.querySelector('input[type=file]')
-  //fileが選択された時に発火するイベント
-  if($(".item-num-0").length == 1){
-    $('#img-file').change(function(){
-      //選択したfileのオブジェクトをpropで取得
-      var file = $('input[type="file"]').prop('files')[0];
-      //FileReaderのreadAsDataURLで指定したFileオブジェクトを読み込む
-      var fileReader = new FileReader();
-      fileReader.readAsDataURL(file);
-      //読み込みが完了すると、srcにfileのURLを格納
-      fileReader.onloadend = function() {
-        var src = fileReader.result
-        var html= `<div class="item-num-0">
-                    <img src="${src}" width="114" height="80">
-                   </div>`
-        //image_box__container要素の前にhtmlを差し込む
-        $('#image-box__container').before(html);
-      }
-    });
-  }
+  $fileField = $('#file')
+
+  // 選択された画像を取得し表示
+  $($fileField).on('change', $fileField, function(e) {
+    file = e.target.files[0]
+    reader = new FileReader(),
+    $preview = $("#img_field");
+
+    reader.onload = (function(file) {
+      return function(e) {
+        $preview.empty();
+        $preview.append($('<img>').attr({
+          src: e.target.result,
+          width: "100%",
+          class: "preview",
+          title: file.name
+        }));
+      };
+    })(file);
+    reader.readAsDataURL(file);
+  });
 });
