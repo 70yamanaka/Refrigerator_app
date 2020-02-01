@@ -35,24 +35,24 @@
         }
       }
       &__new {
-        position: fixed;
-        width: 110px;
-        height: 110px;
-        left: 0;
-        top: 0;
-        border-radius: 0 0 20px 0;
-        text-align: center;
-        z-index: 100;
-        padding: 5px;
-        background: #BB0000;
         &__others {
+          position: fixed;
+          width: 110px;
+          height: 110px;
+          left: 0;
+          top: 0;
+          border-radius: 0 0 20px 0;
+          text-align: center;
+          z-index: 100;
+          padding: 5px;
+          background: #BB0000;
           font-size: 20px;
           text-decoration: none;
           color: white;
-        }
-        &:hover {
-          background: #FFD700	;
-          color: black;
+          &:hover {
+            background: #FFD700	;
+            color: black;
+          }
         }
       }
       &__daytime{
@@ -122,13 +122,21 @@
           border-bottom: 1px solid #eee;
           position: relative;
           padding: 20px;
+          text-align: center;
+          &__title {
+            text-decoration: none;
+            color: black;
+            &:hover {
+              color: #005FFF;
+            }
+          }
           &__list{
             display: flex;
-            flex-wrap: wrap;
             background-color: #EEFFFF;
             border-radius: 30px;
             height: 250px;
             overflow: scroll;
+            white-space:nowrap;
             &__data {
               border: solid black;
               background-color: white;

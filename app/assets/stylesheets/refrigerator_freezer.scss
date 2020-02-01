@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-.in1 {
+.in3 {
   font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
-  background: image-url("search.jpeg");
+  background: image-url("freezer.jpeg");
   background-size: cover;
   &__main {
     font-size: 30px;
@@ -12,23 +12,6 @@
     &__header {
       display: flex;
       padding: 30px;
-      .search-btn {
-        display: inline-block;
-        padding: 0.5em 1em;
-        text-decoration: none;
-        background: #F00;
-        color: #FFF;
-        border-bottom: solid 4px #CC0000;
-        border-radius: 30px;
-        &:active {
-          -webkit-transform: translateY(4px);
-          transform: translateY(4px);
-          border: none;
-        }
-        &:focus {
-          outline: none;
-        }
-      }
       &__new {
         position: fixed;
         width: 110px;
@@ -66,21 +49,27 @@
           font-size: 20px;
         }
       }
-
     }
     &__center {
       margin-top: 50px;
       margin: 0 auto;
-      &__search {
-        background-color: #DDDDDD;
+      &__main {
         position: relative;
         padding: 20px;
-        border-radius: 30px;
-        &__main {
+        text-align: center;
+        &__title {
+          font-size: 30px;
+          padding:32px 16px;
+          background-color: #EEEEEE;
+          text-align: center;
+          border-radius: 30px;
+          margin-bottom: 20px;
+        }
+        &__list{
           display: flex;
-          flex-wrap: wrap;
           background-color: #EEFFFF;
           border-radius: 30px;
+          flex-wrap: wrap;
           height: 100%;
           &__data {
             border: solid black;

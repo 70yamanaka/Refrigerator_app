@@ -1,0 +1,16 @@
+.in3
+  .in3__main
+    = render 'refrigerator'
+    .in3__main__header
+      - if user_signed_in?
+        .in3__main__header__new
+          = render 'new'
+        .in3__main__header__daytime
+          = render 'time'
+    .in3__main__center
+      .in3__main__center__main
+        .in3__main__center__main__title
+          海鮮類
+        %ul.in3__main__center__main__list
+          - @puts_3.each do |put|
+            =render "refrigerator_freezer", put: put
