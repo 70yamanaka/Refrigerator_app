@@ -3,15 +3,15 @@ $(function() {
   var search_list = $("#result");
 
   function appendPut(put) {
-    var html = `<div class="in__main__center__search__main__data")">
-                  <div class= "in__main__center__search__main__data__link">
+    var html = `<div class="in1__main__center__search__main__data")">
+                  <div class= "in1__main__center__search__main__data__link">
                     <a href="/puts/${put.id}" "method="get"></a>
-                    <div class= "in__main__center__search__main__data__link__image" >
+                    <div class= "in1__main__center__search__main__data__link__image" >
                     <img src=${put.image.url} width="120" height="120" style= "border-radius: 30px;">
-                      <div class= "in__main__center__search__main__data__link__image__name">
+                      <div class= "in1__main__center__search__main__data__link__image__name">
                         ${put.name}
                       </div>
-                      <div class= "in__main__center__search__main__data__link__image__bestby_date">
+                      <div class= "in1__main__center__search__main__data__link__image__bestby_date">
                         ${put.bestby_date_y}/${put.bestby_date_m}/${put.bestby_date_d}
                       </div>
                     </div>
