@@ -49,21 +49,20 @@
           font-size: 20px;
         }
       }
-
     }
     &__center {
       margin-top: 50px;
       margin: 0 auto;
-      &__category {
-        background-color: #DDDDDD;
+      &__main {
         position: relative;
         padding: 20px;
-        border-radius: 30px;
-        &__main {
+        text-align: center;
+        &__list{
           display: flex;
-          flex-wrap: wrap;
           background-color: #EEFFFF;
           border-radius: 30px;
+          flex-wrap: wrap;
+          height: 100%;
           &__data {
             border: solid black;
             background-color: white;

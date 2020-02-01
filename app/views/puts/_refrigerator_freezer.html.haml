@@ -1,0 +1,12 @@
+- if put.user_id == current_user.id
+  %li.in3__main__center__main__list__data
+    =link_to put_path(put.id),class: "in3__main__center__main__list__data__link" do
+      = image_tag put.image.url, size: "120x120", class: "in3__main__center__main__list__data__link__image"
+      .in3__main__center__main__list__data__link__image__name
+        = put.name
+      .in3__main__center__main__list__data__link__image__bestby_date
+        = put.bestby_date_y
+        %span.txtred<> /
+        = put.bestby_date_m
+        %span.txtred<> /
+        = put.bestby_date_d
