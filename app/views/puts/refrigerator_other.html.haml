@@ -9,7 +9,8 @@
           = render 'time'
     .in3__main__center
       .in3__main__center__main
-        その他
+        .in3__main__center__main__title
+          その他
         %ul.in3__main__center__main__list
           - @puts_11.each do |put|
             =render "refrigerator_freezer", put: put
