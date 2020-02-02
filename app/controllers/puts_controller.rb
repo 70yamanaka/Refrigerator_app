@@ -1,5 +1,5 @@
 class PutsController < ApplicationController
-  before_action :move_to_top
+  # before_action :move_to_top
 
   def index
     @puts_1 = Put.where(category: "1").order('created_at DESC')

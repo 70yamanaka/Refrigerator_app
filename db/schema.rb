@@ -14,12 +14,12 @@ ActiveRecord::Schema.define(version: 2020_01_26_122327) do
 
   create_table "puts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "image", null: false
-    t.text "bestby_date_y"
-    t.text "bestby_date_m"
-    t.text "bestby_date_d"
-    t.integer "category", default: 0, null: false
-    t.integer "count"
     t.string "name", null: false
+    t.integer "category", default: 0, null: false
+    t.text "bestby_date_y", null: false
+    t.text "bestby_date_m", null: false
+    t.text "bestby_date_d", null: false
+    t.integer "count"
     t.string "memo"
     t.bigint "user_id"
     t.datetime "created_at", null: false

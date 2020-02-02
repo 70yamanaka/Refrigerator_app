@@ -16,5 +16,13 @@ class Put < ApplicationRecord
     return Put.all() unless search
     Put.where('name LIKE(?)', "%#{search}%")
   end
+
   mount_uploader :image, ImageUploader
+
+  validates :image, presence: true
+  validates :name, presence: true
+  validates :category, exclusion: { in: ['------'] }
+  validates :bestby_date_y, exclusion: { in: ['------'] }
+  validates :bestby_date_m, exclusion: { in: ['------'] }
+  validates :bestby_date_d, exclusion: { in: ['------'] }
 end
