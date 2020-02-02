@@ -20,7 +20,7 @@
             = f.label :パスワード
             - if @minimum_password_length
               %em
-                (#{@minimum_password_length} 文字)
+                (#{@minimum_password_length} 文字,英数字含む)
             %br/
             = f.password_field :password, id: "js-password", autocomplete: "new-password"
           .container__new__registrations__main__password
