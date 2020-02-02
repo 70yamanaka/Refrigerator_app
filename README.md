@@ -1,27 +1,38 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Name
+冷蔵庫管理アプリ
 
-Things you may want to cover:
+Refrigerator management app
 
-* Ruby version
+## Overview
+外でも冷蔵庫の中が見えるアプリです。
 
-* System dependencies
+An app that allows you to see inside the refrigerator outside.
 
-* Configuration
+## Description
+このアプリは買い物中に冷蔵庫の中身を確認することができるアプリです。賞味期限切れや買い忘れを防ぐことができます！
 
-* Database creation
+This app allows you to clean the refrigerator while shopping It is an application that can be confirmed.
+You can prevent the expiration date or forget to buy!
 
-* Database initialization
+## Demo
 
-* How to run the test suite
+## VS. 
 
-* Services (job queues, cache servers, search engines, etc.)
+## Requirement
 
-* Deployment instructions
+## Usage
 
-* ...
+## Install
+
+## Contribution
+
+## Licence
+
+
+## Author
+
 
 # refrigerator DB設計
 ## usersテーブ
