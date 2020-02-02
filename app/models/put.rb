@@ -22,7 +22,7 @@ class Put < ApplicationRecord
   validates :image, presence: true
   validates :name, presence: true
   validates :category, exclusion: { in: ['------'] }
-  validates :bestby_date_y, exclusion: { in: ['------'] }
-  validates :bestby_date_m, exclusion: { in: ['------'] }
-  validates :bestby_date_d, exclusion: { in: ['------'] }
+  validates :bestby_date_y, presence: true
+  validates :bestby_date_m, presence: true
+  validates :bestby_date_d, presence: true
 end
