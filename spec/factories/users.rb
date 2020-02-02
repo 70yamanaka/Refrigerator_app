@@ -1,5 +1,4 @@
 FactoryBot.define do
-
   factory :user do
     nickname              {"abe"}
     email                 {"kkk@gmail.com"}
@@ -7,5 +6,4 @@ FactoryBot.define do
     created_at            {"20111111"}
     updated_at            {"20111111"}
   end
-
 end
