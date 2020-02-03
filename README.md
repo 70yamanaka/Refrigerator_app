@@ -1,14 +1,14 @@
 # README
 
 ## Name
-冷蔵庫管理アプリ
-
-Refrigerator management app
-
-## Overview
-外でも冷蔵庫の中が見えるアプリです。
+「外でも冷蔵庫の中が見えるアプリ」です。
 
 An app that allows you to see inside the refrigerator outside.
+
+## Overview
+冷蔵庫管理アプリです。
+
+Refrigerator management app
 
 ## Description
 このアプリは買い物中に冷蔵庫の中身を確認することができるアプリです。賞味期限切れや買い忘れを防ぐことができます！
