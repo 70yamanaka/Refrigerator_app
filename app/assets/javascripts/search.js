@@ -5,7 +5,7 @@ $(function() {
   function appendPut(put) {
     var html = `<div class="in1__main__center__search__main__data")">
                   <div class= "in1__main__center__search__main__data__link">
-                    <a href="/puts/${put.id}" "method="get"></a>
+                    <a href="/puts/${put.id}" "method="get" style= "text-decoration: none;">
                     <div class= "in1__main__center__search__main__data__link__image" >
                     <img src=${put.image.url} width="120" height="120" style= "border-radius: 30px;">
                       <div class= "in1__main__center__search__main__data__link__image__name">
@@ -15,6 +15,7 @@ $(function() {
                         ${put.bestby_date_y}年/${put.bestby_date_m}月/${put.bestby_date_d}日
                       </div>
                     </div>
+                    </a>
                   </div>
                 </div>`
     search_list.append(html);
