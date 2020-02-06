@@ -44,7 +44,7 @@
           border-radius: 0 0 20px 0;
           text-align: center;
           z-index: 100;
-          padding: 5px;
+          padding-top: 40px;
           background: #BB0000;
           font-size: 20px;
           text-decoration: none;
@@ -92,15 +92,15 @@
         }
       }
       &__name {
-        text-decoration: none;
         margin-right: 10px;
         display: block;
         width: 140px;
         padding: 0.8em;
+        background-color: #FF3366;
         text-align: center;
         text-decoration: none;
-        color: #CCFF33	;
-        border: 2px solid #CCFF33	;
+        color: black	;
+        border: 2px solid #FF3366	;
         border-radius: 3px;
         transition: .4s;
         font-size: 17pt;
