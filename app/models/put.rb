@@ -14,7 +14,7 @@ class Put < ApplicationRecord
   }
   def self.search(search)
     return Put.all() unless search
-    Put.where('name LIKE(?)', "%#{search}%")
+    Put.where('name LIKE(?) OR bestby_date_d LIKE(?)', "%#{search}%", "%#{search}%")
   end
 
   mount_uploader :image, ImageUploader
