@@ -12,7 +12,7 @@ $(function() {
                         ${put.name}
                       </div>
                       <div class= "in1__main__center__search__main__data__link__image__bestby_date">
-                        ${put.bestby_date_y}年/${put.bestby_date_m}月/${put.bestby_date_d}日
+                        ${put.bestby_date_y}/${put.bestby_date_m}/${put.bestby_date_d}
                       </div>
                     </div>
                     </a>
