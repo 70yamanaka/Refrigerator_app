@@ -193,7 +193,8 @@
     .in__main__center input:checked + .in__main__center__tab_item {
       background-color: #A7F1FF;
       height: 74px;
-      line-height: 74px;
+      line-height: 72px;
+      color: black;
     }
   }
 }
