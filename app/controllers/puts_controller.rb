@@ -50,7 +50,7 @@ class PutsController < ApplicationController
 
   def update
     @put = Put.find(params[:id])
-    if Put.update(update_params)
+    if @put.update(update_params)
       redirect_to(root_path)
     else
       render :edit
@@ -167,11 +167,11 @@ class PutsController < ApplicationController
 
   private
   def put_params
-    params.require(:put).permit(:image,:name,:bestby_date_y,:bestby_date_m,:bestby_date_d,:expiration_date_y,:expiration_date_m,:expiration_date_d,:category,:type, :count, :memo)
+    params.require(:put).permit(:image,:name,:bestby_date_y ,:bestby_date_m, :bestby_date_d, :category, :count, :memo)
   end
 
   def update_params
-    params.require(:put).permit(:bestby_date_y,:bestby_date_m,:bestby_date_d,:expiration_date_y,:expiration_date_m,:expiration_date_d,:category,:type, :count, :memo)
+    params.require(:put).permit(:image,:name,:bestby_date_y ,:bestby_date_m, :bestby_date_d, :category, :count, :memo)
   end
 
   def move_to_top
