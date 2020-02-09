@@ -27,9 +27,9 @@
           ＜ 消費期限 ＞
           .show-main__container__outside__data__bestby_date--content
             = @put.bestby_date_y
-            %span.txtred<> /
+            %span.txtred<> 
             = @put.bestby_date_m
-            %span.txtred<> /
+            %span.txtred<> 
             = @put.bestby_date_d
             までに食べてください
         .show-main__container__outside__data__memo
@@ -43,5 +43,5 @@
       .show-main__container__btn__edit
         = link_to "変更する",edit_put_path(@put),class:"show-main__container__btn__edit__submit"
       .show-main__container__btn__destroy
-        = link_to "削除する",put_path(@put), method: :delete ,class:"show-main__container__btn__destroy__submit"
+        = link_to "削除する",put_path(@put), method: :delete ,class:"show-main__container__btn__destroy__submit", data: { confirm: '削除しますか？' }
       

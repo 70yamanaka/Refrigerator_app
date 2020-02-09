@@ -44,7 +44,7 @@
           border-radius: 0 0 20px 0;
           text-align: center;
           z-index: 100;
-          padding-top: 40px;
+          padding-top: 30px;
           background: #BB0000;
           font-size: 20px;
           text-decoration: none;
@@ -92,19 +92,18 @@
         }
       }
       &__name {
-        margin-right: 10px;
-        display: block;
-        width: 140px;
-        padding: 0.8em;
-        background-color: #FF3366;
+        position: fixed;
+        width: 110px;
+        height: 110px;
+        right: 0;
+        top: 10;
+        border-radius: 20px 0 0 20px;
+        background: #00FF3B	;
+        color: black;
         text-align: center;
-        text-decoration: none;
-        color: black	;
-        border: 2px solid #FF3366	;
-        border-radius: 3px;
-        transition: .4s;
-        font-size: 17pt;
-        height: 80px;
+        z-index: 100;
+        padding: 5px;
+        padding-top: 25px;
       }
     }
     &__center {
@@ -193,7 +192,8 @@
     .in__main__center input:checked + .in__main__center__tab_item {
       background-color: #A7F1FF;
       height: 74px;
-      line-height: 74px;
+      line-height: 72px;
+      color: black;
     }
   }
 }
