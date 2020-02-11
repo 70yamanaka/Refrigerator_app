@@ -22,7 +22,7 @@
             - if @put.count.present?
               = @put.count
             - else
-              記載されていません
+              記載されていません。
         .show-main__container__outside__data__bestby_date
           ＜ 消費期限 ＞
           .show-main__container__outside__data__bestby_date--content
@@ -31,14 +31,14 @@
             = @put.bestby_date_m
             %span.txtred<> 
             = @put.bestby_date_d
-            までに食べてください
+            までに食べてください。
         .show-main__container__outside__data__memo
           ＜ メモ ＞
           .show-main__container__outside__data__memo--content
             - if @put.memo.present?
               = @put.memo
             - else
-              記載されていません
+              記載されていません。
     .show-main__container__btn
       .show-main__container__btn__edit
         = link_to "変更する",edit_put_path(@put),class:"show-main__container__btn__edit__submit"
