@@ -11,6 +11,10 @@
       .in3__main__center__main
         .in3__main__center__main__title
           海鮮類
-        %ul.in3__main__center__main__list
-          - @puts_14.each do |put|
-            =render "refrigerator_freezer", put: put
+        - if @puts_14.present?
+          %ul.in3__main__center__main__list
+            - @puts_14.each do |put|
+              =render "refrigerator_freezer", put: put
+        - else
+          %ul.in3__main__center__main__list
+            商品はありません。
