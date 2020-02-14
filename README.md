@@ -44,9 +44,9 @@ To delete a product, press the delete button at the bottom of the detail page to
 | Column        | Type       | Options           |
 | ------------- | ---------- | ----------------- |
 | image         | text       | null: false       |
-| bestby_date_y | text       |                   |
-| bestby_date_m | text       |                   |
-| bestby_date_d | text       |                   |
+| bestby_date_y | text       | null: false       |
+| bestby_date_m | text       | null: false       |
+| bestby_date_d | text       | null: false       |
 | category      | integer    | null: false       |
 | count         | integer    |                   |
 | name          | string     | null: false       |
