@@ -11,9 +11,7 @@
         = link_to "検索する", search_puts_path, class: "in__main__header__btn"
         .in__main__header__name
           = render 'name'
-        = link_to "TOP", "#", class: "in__main__header__outside__back-to-top"
-        .in__main__header__outside
-          = render 'back-to-top'
+        = link_to "TOP", "#", class: "in__main__header__back-to-top"
     .in__main__center
       %input#refrigerator{checked: "checked", name: "tab_item", type: "radio"}
       %label.in__main__center__tab_item{for: "refrigerator"}
