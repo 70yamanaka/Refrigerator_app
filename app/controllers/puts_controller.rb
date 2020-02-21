@@ -51,7 +51,7 @@ class PutsController < ApplicationController
   def update
     @put = Put.find(params[:id])
     if @put.update(update_params)
-      redirect_to(root_path)
+      redirect_to(put_path)
     else
       render :edit
     end
