@@ -181,6 +181,14 @@
                 opacity: 0.5;
                 background-color: yellow;
               }
+              &__delete {
+                position: relative;
+                &__btn {
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                }
+              }
               &__link {
                 text-decoration: none;
                 &__image {
