@@ -18,9 +18,7 @@
             = f.email_field :email, autofocus: true, autocomplete: "email"
           .container__new__registrations__main__field
             = f.label :パスワード
-            - if @minimum_password_length
-              %em
-                (#{@minimum_password_length} 文字)
+            (6 文字,英数字含む)
             %br/
             = f.password_field :password, id: "js-password", autocomplete: "new-password"
           .container__new__registrations__main__password
