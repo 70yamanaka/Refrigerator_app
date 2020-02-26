@@ -2,7 +2,7 @@
   %li.in__main__center__tab_mains__main__list__data
     .in__main__center__tab_mains__main__list__data__delete
       = link_to put_path(put.id), method: :delete, class: "in__main__center__tab_mains__main__list__data__delete__btn" ,data: { confirm: '削除しますか？' } do
-        = icon 'fas', 'fa-trash-alt'
+        = icon 'fas', 'trash-alt'
     =link_to put_path(put.id),class: "in__main__center__tab_mains__main__list__data__link" do
       = image_tag put.image.url, size: "120x120", class: "in__main__center__tab_mains__main__list__data__link__image"
       .in__main__center__tab_mains__main__list__data__link__image__name
