@@ -7,6 +7,13 @@
   background: image-url("regisrater.jpeg");
   background-size: cover;
   min-height: 1000px;
+  h2 {
+    color: #FF4F02;
+    font-weight: bold;
+  }
+  ul {
+    color: #FF4F02;
+  }
   &__new {
     text-align: center;
     padding-top: 50px;

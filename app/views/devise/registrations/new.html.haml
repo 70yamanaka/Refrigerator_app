@@ -5,10 +5,10 @@
       %span ホームに戻る
     .container__new__registrations
       = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-        = render "devise/shared/error_messages", resource: resource
         .container__new__registrations__title
           新規登録
         .container__new__registrations__main
+          = render "devise/shared/error_messages", resource: resource
           .container__new__registrations__main__field
             = f.label :ニックネーム（10字以内）
             %br/

@@ -4,11 +4,11 @@
 
 .in3 {
   font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
-  background: image-url("freezer.jpeg");
-  background-size: cover;
   &__main {
     font-size: 30px;
-    padding: 50px 50px 500px 50px;
+    background: image-url("freezer.jpeg");
+    background-size: cover;
+    padding: 50px 50px 100% 50px ;
     &__header {
       display: flex;
       padding: 30px;
@@ -81,6 +81,24 @@
             &:hover {
               opacity: 0.5;
               background-color: yellow;
+            }
+            &__delete {
+              position: relative;
+              &__btn {
+                position: absolute;
+                right: 0;
+                top: 0;
+                margin: -10px -5px 0 0;
+                color: #BBBBBB;
+                background-color: white;
+                padding: 5px;
+                border-radius: 20px;
+                &:hover {
+                  opacity: 100;
+                  color: #DD0000;
+                  background-color: black;
+                }
+              }
             }
             &__link {
               text-decoration: none;

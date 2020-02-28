@@ -18,7 +18,7 @@
                   = image_tag(@put.image.url)
                 - else
                   %i.fas.fa-image
-                  %i.fas.fa-file-upload.add
+                  -# %i.fas.fa-file-upload.add
               =f.file_field :image, {class: "image", style: "display:none;", id: "file"}
         .inbox__exhibitcontent__main__outside__second
           .inbox__exhibitcontent__main__outside__second__name
