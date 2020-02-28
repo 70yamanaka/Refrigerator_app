@@ -1,8 +1,5 @@
 - if put.user_id == current_user.id
   %li.in1__main__center__search__main__data
-    .in1__main__center__search__main__data__delete
-      = link_to put_path(put.id), method: :delete, class: "in1__main__center__search__main__data__delete__btn" ,data: { confirm: '削除しますか？' } do
-        = icon 'fas', 'trash-alt'
     =link_to put_path(put.id),class: "in1__main__center__search__main__data__link" do
       = image_tag put.image.url, size: "120x120", class: "in1__main__center__search__main__data__link__image"
       .in1__main__center__search__main__data__link__image__name

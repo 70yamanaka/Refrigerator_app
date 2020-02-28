@@ -93,24 +93,6 @@
               opacity: 0.5;
               background-color: yellow;
             }
-            &__delete {
-              position: relative;
-              &__btn {
-                position: absolute;
-                right: 0;
-                top: 0;
-                margin: -10px -5px 0 0;
-                color: #BBBBBB;
-                background-color: white;
-                padding: 5px;
-                border-radius: 20px;
-                &:hover {
-                  opacity: 100;
-                  color: #DD0000;
-                  background-color: black;
-                }
-              }
-            }
             &__link {
               text-decoration: none;
               &__image {
