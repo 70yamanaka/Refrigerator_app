@@ -4,11 +4,11 @@
 
 .in3 {
   font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
-  background: image-url("freezer.jpeg");
-  background-size: cover;
   &__main {
     font-size: 30px;
-    padding: 50px 50px 500px 50px;
+    background: image-url("freezer.jpeg");
+    background-size: cover;
+    padding: 50px 50px 100% 50px ;
     &__header {
       display: flex;
       padding: 30px;
