@@ -4,13 +4,11 @@
 
 .in1 {
   font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
-  background: image-url("search.jpeg");
-  background-size: cover;
   &__main {
     font-size: 30px;
-    margin: 0 3%;
-    padding-top: 50px;
-    padding-bottom: 100%;
+    padding: 50px 50px 100% 50px;
+    background: image-url("search.jpeg");
+    background-size: cover;
     &__header {
       display: flex;
       padding: 30px;
@@ -68,7 +66,40 @@
           font-size: 20px;
         }
       }
-
+      &__name {
+        position: fixed;
+        width: 110px;
+        height: 110px;
+        right: 0;
+        top: 10;
+        border-radius: 20px 0 0 20px;
+        background: green	;
+        color: #ffffff;
+        text-align: center;
+        z-index: 100;
+        padding: 5px;
+        padding-top: 25px;
+      }
+      &__back-to-top {
+        position: fixed;
+        width: 110px;
+        height: 110px;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px 0 0 0;
+        background:	#FF4F02;
+        color: #ffffff;
+        text-align: center;
+        z-index: 100;
+        padding: 5px;
+        padding-top: 35px;
+        display: none;
+        text-decoration: none;
+        &:hover {
+          background: #FFD700	;
+          color: black;
+        }
+      }
     }
     &__center {
       margin-top: 50px;
