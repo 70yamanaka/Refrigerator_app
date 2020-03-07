@@ -55,3 +55,5 @@ To delete a product, press the delete button at the bottom of the detail page to
 ### Association
 - belongs_to : user
 
+
+
