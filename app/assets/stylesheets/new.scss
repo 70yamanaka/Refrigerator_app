@@ -314,6 +314,9 @@
               transform: translateY(4px);
               border: none;
             }
+            &:focus {
+              outline: none;
+            }
           }
           &--back {
             display: inline-block;
@@ -327,6 +330,9 @@
               -webkit-transform: translateY(4px);
               transform: translateY(4px);
               border: none;
+            }
+            &:focus {
+              outline: none;
             }
           }
         }
